@@ -274,5 +274,39 @@ window.PORTFOLIO_PROJECTS=[
         "Generator CSV"
       ]
     }
+  },
+  {
+    "id": "all-stock",
+    "category": "content",
+    "type": {
+      "ru": "Производство стокового контента",
+      "en": "Stock content production"
+    },
+    "title": {
+      "ru": "All Stock — от тем до изображений и метаданных",
+      "en": "All Stock — topics to images and metadata"
+    },
+    "summary": {
+      "ru": "Промпты, генерация 4K через API, очистка файлов и отдельные CSV для стоков в одном процессе.",
+      "en": "Prompts, 4K generation through APIs, file cleanup and stock-specific CSV exports in one workflow."
+    },
+    "image": "work/all-stock/assets/prompts.png",
+    "alt": {
+      "ru": "Генератор промптов: режим, LLM, формат CSV, организация папок и сохранённая рабочая сессия.",
+      "en": "Prompt generator: workflow mode, LLM, CSV format, folder organization and a saved session; Russian interface."
+    },
+    "url": "work/all-stock/",
+    "tags": {
+      "ru": [
+        "Генеративный контент",
+        "API-интеграции",
+        "Автоматизация"
+      ],
+      "en": [
+        "Generative content",
+        "API integrations",
+        "Automation"
+      ]
+    }
   }
 ];
