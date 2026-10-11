@@ -2,7 +2,7 @@ const copy={
   "ru": {
     "kicker": "MEDFLOW / АВТОМАТИЗАЦИЯ ПОДГОТОВКИ ДОКУМЕНТОВ",
     "title": "Подготовка направлений без ручного заполнения Excel",
-    "intro": "Medflow автоматизирует оформление направлений на медицинский осмотр и психиатрическое освидетельствование. Приложение извлекает данные из текстовой PDF-анкеты или принимает их вручную, подставляет требования из справочника и формирует документы в PDF и Excel. Готовые файлы сохраняются в личном архиве.",
+    "intro": "Medflow автоматизирует оформление направлений на медицинский осмотр и психиатрическое освидетельствование. Приложение извлекает данные из текстовой PDF-анкеты; также пользователь может ввести их в форму самостоятельно. Требования подставляются из справочника, а документы формируются в PDF и Excel. Готовые файлы сохраняются в личном архиве.",
     "status": "Личный проект · Автоматические и неоднократные ручные проверки",
     "taskTitle": "Сократить повторный ввод и ручные операции",
     "task": "Раньше подготовка комплекта требовала переносить данные человека в Excel, выбирать требования, проверять нужные страницы и вручную сохранять результат в нескольких форматах. Отдельно добавлялись подпись и печать. Повторные исправления увеличивали количество действий.\n\nЗадача личного проекта — заменить этот процесс последовательным сценарием: получить данные, выбрать условия, проверить заполнение и скачать готовые документы. При этом разовое исправление направления не должно менять общий справочник.",
@@ -85,7 +85,7 @@ const copy={
   "en": {
     "kicker": "MEDFLOW / DOCUMENT PREPARATION AUTOMATION",
     "title": "Preparing referrals without manually filling Excel",
-    "intro": "Medflow automates medical examination and psychiatric assessment referrals. It extracts data from text-based PDF questionnaires or accepts manual input, applies requirements from a reference workbook and produces PDF and Excel documents. Completed files are retained in a personal archive.",
+    "intro": "Medflow automates medical examination and psychiatric assessment referrals. The application extracts data from a text-based PDF questionnaire; users can also enter it directly into the form. Requirements are applied from a reference workbook, and documents are generated in PDF and Excel. Completed files are retained in a personal archive.",
     "status": "Personal project · Automated and repeated manual checks",
     "taskTitle": "Reduce repeated input and manual operations",
     "task": "Preparing a document bundle previously required transferring personal details into Excel, selecting requirements, checking print pages and saving multiple formats manually. Signatures and stamps were added separately, with corrections requiring further work.\n\nThis personal project replaces those steps with a single workflow: obtain data, select conditions, review the form and download completed documents. One-off edits must not change the shared reference workbook.",
