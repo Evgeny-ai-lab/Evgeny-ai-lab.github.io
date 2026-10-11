@@ -37,16 +37,16 @@ window.PORTFOLIO_PROJECTS=[
     "id": "motorscope",
     "category": "monitor",
     "type": {
-      "ru": "Мониторинг и аналитика",
-      "en": "Monitoring & analytics"
+      "ru": "Готовый проект для заказчика",
+      "en": "Completed client project"
     },
     "title": {
       "ru": "MotorScope — мониторинг рынка авто и мото",
       "en": "MotorScope — vehicle market monitoring"
     },
     "summary": {
-      "ru": "История цен, новые объявления и снижения стоимости на av.by. Интерактивная аналитика по выбранным моделям автомобилей и мотоциклов.",
-      "en": "av.by price history, new listings and price reductions. Interactive analytics for selected car and motorcycle models."
+      "ru": "Мониторинг выбранных моделей: цены, сроки предложения, новые и снятые объявления. Аналитика для оценки рынка и планирования закупок.",
+      "en": "Selected-model monitoring: prices, time on the market, new and removed listings. Analytics for market assessment and purchasing plans."
     },
     "image": "work/motorscope/assets/overview.png",
     "alt": {

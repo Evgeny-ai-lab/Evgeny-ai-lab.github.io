@@ -2,11 +2,11 @@ const copy={
   "ru": {
     "kicker": "MOTORSCOPE / МОНИТОРИНГ И АНАЛИТИКА АВТОРЫНКА",
     "title": "Мониторинг рынка автомобилей и мотоциклов",
-    "intro": "MotorScope отслеживает объявления на av.by по выбранным пользователем параметрам. Приложение сохраняет историю цен, отмечает новые предложения и снижения стоимости, а интерактивные графики помогают сравнивать варианты по годам, пробегу и городу.",
-    "heroCaption": "Обзор Ford Bronco Sport: предложение, цены и изменения по сохранённым наблюдениям. Реальный экран приложения, 11 октября 2026 года.",
-    "status": "Рабочее приложение · Реальные данные av.by",
-    "taskTitle": "Следить за нужными моделями, а не проверять выдачу заново",
-    "task": "При поиске автомобиля или мотоцикла одного списка объявлений недостаточно. Важно понимать, какие варианты появились, где снизилась цена и как предложение меняется со временем. Задача — автоматизировать повторные проверки выбранных групп и собрать их историю в одном инструменте, чтобы не вести таблицы вручную и не сравнивать объявления по памяти.",
+    "intro": "MotorScope помогает исследовать рынок выбранных автомобилей и мотоциклов на av.by. По заданным моделям и параметрам приложение отслеживает цены, появление и уход объявлений, сроки предложения и снижения стоимости. История наблюдений и интерактивные графики позволяют сравнивать рыночные сегменты и оценивать их востребованность.",
+    "heroCaption": "Обзор Ford Bronco Sport: цены, объём предложения, новые объявления, сроки и снижения стоимости. Реальный экран работающего приложения.",
+    "status": "Готовый проект · Протестирован заказчиком",
+    "taskTitle": "Понимать, какие модели и характеристики востребованы на рынке",
+    "task": "Требовался инструмент для постоянного наблюдения за рынком конкретных автомобилей и мотоциклов: с нужными годами выпуска, двигателями и другими параметрами. Важно видеть, сколько предложений появляется за выбранный период, как быстро они уходят, по каким ценам выставляются и насколько часто продавцы снижают стоимость. Сравнение по пробегу, году и городу должно помогать оценивать востребованность разных сегментов — без ежедневного ручного просмотра выдачи и ведения таблиц. Объявления необходимо сохранять, чтобы анализировать их и после исчезновения с площадки.",
     "solutionTitle": "Что делает приложение",
     "steps": [
       [
@@ -18,18 +18,18 @@ const copy={
         "Сбор запускается вручную или каждые 24 часа при работающем приложении. Новые объявления, цены и статусы сохраняются отдельно для каждого поиска."
       ],
       [
-        "Показывает картину рынка",
-        "Медиана цены, распределения и история помогают сравнивать предложения. Выбор года, города, бюджета или пробега пересчитывает показатели и список объявлений."
+        "Анализирует выбранный сегмент",
+        "Показывает цены, новые и снятые объявления, сроки предложения и снижения стоимости. Фильтры по году, пробегу, городу и бюджету пересчитывают аналитику."
       ],
       [
-        "Сохраняет нужные варианты",
-        "Объявления можно добавить в избранное, открыть историю цены или выгрузить выборку в CSV. Локальные копии сохраняют описание, характеристики и фотографии."
+        "Автоматически сохраняет объявления",
+        "Для собранных объявлений создаются локальные копии с описанием, характеристиками и фотографиями. Они остаются доступны после ухода с площадки — вместе с историей наблюдений и цен."
       ]
     ],
-    "interactiveTitle": "От общей статистики — к подходящим вариантам",
-    "interactive": "Графики связаны с объявлениями: выбранные условия применяются вместе. Можно сравнить конкретный сегмент со всей группой и сразу перейти к его предложениям — без повторного сбора данных.",
-    "explorerCaption": "Годы выпуска и города — одновременно аналитика и элементы выбора. Нажатия на графики меняют исследуемую выборку.",
-    "filteredCaption": "Выбраны 2021–2023 годы и Минск: 46 из 143 текущих предложений, медианная цена $19 850. Показаны объявления и сохранённые условия выборки.",
+    "interactiveTitle": "Сравнение рыночных сегментов",
+    "interactive": "Выбор года, пробега, города и ценового диапазона пересчитывает статистику и историю наблюдений. Это позволяет исследовать отдельный сегмент: сравнить его цены, сроки предложения, частоту появления объявлений и снижения стоимости с общей группой.",
+    "explorerCaption": "Сравнение предложения по годам и городам. Выбор на графиках задаёт сегмент для дальнейшего анализа.",
+    "filteredCaption": "Пример сегмента: Ford Bronco Sport 2021–2023 годов в Минске. Для него пересчитаны количество предложений, медианная цена и история; сохранённые объявления доступны для изучения.",
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
@@ -38,11 +38,11 @@ const copy={
       ],
       [
         "Быстрый сбор с браузерным резервом",
-        "Изучены запросы, которыми сама площадка получает выдачу. Для поддерживаемых фильтров используется структурированный JSON; при неизвестных параметрах или сбое подключается Playwright. Число уникальных объявлений сверяется со счётчиком источника."
+        "Изучены запросы, которыми сама площадка получает выдачу. Для поддерживаемых фильтров используется структурированный JSON; при неизвестных параметрах или сбое подключается Playwright. В сравнительном прогоне сбор 26 мотоциклов сократился с 47,6 до 4,4 секунды; замер не включает загрузку фотографий."
       ],
       [
         "Защита истории от неполных проверок",
-        "Ошибка загрузки не означает, что объявления исчезли. Уход фиксируется только после повторного отсутствия в полных проверках с интервалом не менее шести часов. Снятие с выдачи используется как признак изменения предложения, а не доказательство сделки."
+        "Ошибка загрузки не означает, что объявления исчезли. Уход фиксируется только после повторного отсутствия в полных проверках с интервалом не менее шести часов. Число уникальных объявлений сверяется со счётчиком источника — неполная выдача не искажает историю движения рынка."
       ],
       [
         "Наблюдения вместо перезаписи данных",
@@ -53,15 +53,15 @@ const copy={
         "Долларовая цена сохраняется напрямую из данных площадки. Прошлые значения не пересчитываются текущим курсом, а валютные колебания не выдаются за скидку продавца. Для каждого снижения доступны прежняя цена, новая цена, сумма и процент."
       ],
       [
-        "Аналитика связана с конкретными объявлениями",
-        "Фильтры пересчитывают статистику, графики, историю и CSV одной выборки. Из показателя или точки графика можно перейти к объявлениям, а из снижения цены — к истории наблюдений. Пользователь видит, на каких предложениях основаны выводы."
+        "Единая выборка для всей аналитики",
+        "Фильтры пересчитывают статистику, графики, историю и CSV одного сегмента. Параметры работают совместно: можно сравнивать конкретные годы, пробеги и города, затем изучать объявления, на которых основаны показатели."
       ]
     ],
-    "resultTitle": "История рынка вместо повторного просмотра объявлений",
-    "result": "MotorScope собирает изменения в одном месте: пользователь видит новые варианты и снижения цен, сравнивает подходящие предложения и возвращается к сохранённым объявлениям. На момент подготовки кейса четыре поиска содержали 461 активное объявление. В сравнительном прогоне одной группы из 26 мотоциклов сбор данных сократился с 47,6 до 4,4 секунды при совпадении карточек и их характеристик. Замер не включает скачивание фотографий.",
-    "dropsCaption": "Сравнение снижений цены: было → стало, сумма и процент. От строки можно перейти к полной истории объявления.",
-    "historyCaption": "История одного предложения: снижение с $23 000 до $21 000 и даты последующих наблюдений. Фрагмент экрана подробностей.",
-    "proof": "В последнем зафиксированном прогоне пройдены 104 серверных теста. Ранее проверены 30 браузерных сценариев на изолированных тестовых данных. Для этого кейса дополнительно проверены работающий интерфейс, совместный выбор годов и города, переход к объявлениям и история цены. Скриншоты сняты с реальных данных приложения.",
+    "resultTitle": "Данные для оценки рынка и планирования закупок",
+    "result": "Заказчик получил инструмент для сравнения интересующих моделей и рыночных сегментов: по ценам, срокам предложения, интенсивности появления и ухода объявлений, частоте снижения стоимости. Накопленная история помогает оценивать оборачиваемость и выбирать направления для дальнейших закупок. Сбор данных, расчёты и сохранение объявлений выполняются автоматически — вместо постоянных проверок площадки и ручного ведения аналитики.",
+    "dropsCaption": "Динамика медианной цены и объёма предложения выбранной модели. Каждый срез пополняет историю рынка.",
+    "historyCaption": "Сравнение текущих и снятых объявлений по пробегу, году и цене. Цвет выделяет год выпуска, бронзовые точки — объявления, ушедшие из выдачи.",
+    "proof": "104 автоматических теста проверяют серверную логику: сбор и обработку данных, фильтрацию, историю наблюдений, цены и обработку ошибок. Дополнительно проверены 30 браузерных сценариев. Проводилось ручное тестирование функциональности и пользовательских сценариев. Заказчик также протестировал приложение на реальных объявлениях и проверил работу мониторинга и аналитики. На странице представлены реальные экраны работающего приложения.",
     "stack": [
       [
         "Python · FastAPI",
@@ -92,11 +92,11 @@ const copy={
   "en": {
     "kicker": "MOTORSCOPE / VEHICLE MARKET MONITORING & ANALYTICS",
     "title": "Car and motorcycle market monitoring",
-    "intro": "MotorScope tracks av.by listings against user-defined search criteria. It records price history, new listings and price drops, while interactive charts help compare vehicles by year, mileage and location.",
-    "heroCaption": "Ford Bronco Sport overview: supply, prices and changes from recorded observations. Actual application screen, October 11, 2026; Russian interface.",
-    "status": "Working application · Real av.by data",
-    "taskTitle": "Track the models that matter without checking every listing again",
-    "task": "A list of current listings is only part of a vehicle search. Buyers also need to know what is new, where prices have fallen and how supply changes over time. The task was to automate repeated checks of selected groups and bring their history into one tool, replacing manual spreadsheets and comparisons from memory.",
+    "intro": "MotorScope helps analyse the market for selected cars and motorcycles on av.by. For specified models and criteria, it tracks prices, new and removed listings, time on the market and price reductions. Recorded observations and interactive charts support comparisons between market segments and their relative appeal.",
+    "heroCaption": "Ford Bronco Sport overview: prices, supply, new listings, time on the market and price reductions. Actual working application screen; Russian interface.",
+    "status": "Completed project · Client-tested",
+    "taskTitle": "Understand which models and specifications are sought after",
+    "task": "The task was to monitor the market for specific cars and motorcycles with selected production years, engines and other criteria. Users needed to see how many listings appear over a chosen period, how quickly they leave the market, their asking prices and how often sellers reduce them. Comparisons by mileage, year and location should support an assessment of different market segments without daily manual checks or spreadsheets. Listings also needed to remain available for analysis after disappearing from the source website.",
     "solutionTitle": "What the application does",
     "steps": [
       [
@@ -108,18 +108,18 @@ const copy={
         "Collection runs manually or every 24 hours while the application is running. Each search keeps its own new listings, prices and statuses."
       ],
       [
-        "Explore the market",
-        "Median prices, distributions and history support comparisons. Selecting years, location, budget or mileage recalculates metrics and listings."
+        "Analyse a selected segment",
+        "Shows prices, new and removed listings, time on the market and reductions. Year, mileage, location and budget filters recalculate the analysis."
       ],
       [
-        "Keep useful listings",
-        "Users can save favourites, open price history or export a selection as CSV. Local copies retain descriptions, specifications and photographs."
+        "Archive listings automatically",
+        "Collected listings receive local copies with descriptions, specifications and photographs. They remain accessible after leaving the source website, alongside observation and price history."
       ]
     ],
-    "interactiveTitle": "From market overview to relevant listings",
-    "interactive": "Charts connect directly to listings, and selected criteria work together. Users can compare a segment with the full group and open its listings without collecting the data again.",
-    "explorerCaption": "Year and location charts also act as selection controls. Clicking them changes the segment being analysed.",
-    "filteredCaption": "Selected years 2021–2023 and Minsk: 46 of 143 current listings, with a median asking price of $19,850. Listings and selection criteria appear together.",
+    "interactiveTitle": "Compare market segments",
+    "interactive": "Selecting years, mileage, location and price ranges recalculates statistics and observation history. Users can analyse a particular segment and compare its prices, time on the market, new listings and price reductions with the full group.",
+    "explorerCaption": "Supply compared by year and location. Chart selections define a segment for further analysis.",
+    "filteredCaption": "Example segment: Ford Bronco Sport from 2021–2023 in Minsk. Listing counts, median price and history are recalculated, with recorded listings available for inspection.",
     "engineeringTitle": "Key engineering decisions",
     "engineering": [
       [
@@ -128,11 +128,11 @@ const copy={
       ],
       [
         "Fast collection with a browser fallback",
-        "The requests used by the source website were investigated. Supported filters use structured JSON; unknown parameters or a failed request trigger Playwright. Unique listing counts are checked against the source count."
+        "The requests used by the source website were investigated. Supported filters use structured JSON; unknown parameters or a failure trigger Playwright. In a comparison run, collection of 26 motorcycles fell from 47.6 to 4.4 seconds; photo downloads were excluded."
       ],
       [
         "Protect history from incomplete checks",
-        "A loading error does not mean listings have disappeared. Removal requires repeated absence in complete checks at least six hours apart. Leaving the results indicates a supply change, not a confirmed sale."
+        "A loading error does not mean listings have disappeared. Removal requires repeated absence in complete checks at least six hours apart. Unique listing counts are checked against the source count, preventing incomplete results from distorting market history."
       ],
       [
         "Record observations instead of overwriting data",
@@ -143,15 +143,15 @@ const copy={
         "Dollar prices are stored directly from the source. Historical values are not recalculated using today’s exchange rate, and currency movements do not become seller discounts. Each reduction includes the old and new prices, amount and percentage."
       ],
       [
-        "Connect analysis to individual listings",
-        "Filters recalculate metrics, charts, history and CSV for the same selection. Metrics and chart points lead to listings; price reductions lead to recorded price history. Users can inspect the offers behind the figures."
+        "One selection across all analysis",
+        "Filters recalculate statistics, charts, history and CSV for the same segment. Criteria work together to compare specific years, mileages and locations, with the underlying listings available for inspection."
       ]
     ],
-    "resultTitle": "Market history instead of repeatedly reviewing every listing",
-    "result": "MotorScope brings changes into one place: users see new listings and price reductions, compare relevant offers and return to saved listings. At case preparation, four searches contained 461 active listings. In a comparison run on a group of 26 motorcycles, data collection decreased from 47.6 to 4.4 seconds, with matching listings and specifications. This measurement excludes photo downloads.",
-    "dropsCaption": "Price reductions compared: before → after, amount and percentage. Each row opens the listing’s complete price history.",
-    "historyCaption": "One listing’s history: a reduction from $23,000 to $21,000, followed by dated observations. A fragment of the detail screen.",
-    "proof": "The latest recorded run passed 104 server tests. Earlier verification covered 30 browser scenarios using isolated test data. This case additionally checked the live interface, combined year and location selection, listing navigation and price history. Screenshots show actual application data.",
+    "resultTitle": "Data for market assessment and purchasing plans",
+    "result": "The client received a tool for comparing selected models and market segments by prices, time on the market, listing arrivals and departures, and frequency of price reductions. Accumulated history supports an assessment of market turnover and future purchasing priorities. Data collection, calculations and listing archiving run automatically, replacing repeated source checks and manual analysis.",
+    "dropsCaption": "Median asking price and supply over time for the selected model. Each collection adds a new market observation.",
+    "historyCaption": "Current and removed listings compared by mileage, year and asking price. Colour indicates production year; bronze points represent listings that left the search results.",
+    "proof": "104 automated tests cover server logic: collection and processing, filters, observation history, prices and error handling. Verification also covered 30 browser scenarios. Functionality and user workflows were tested manually. The client additionally tested the application against real listings and checked its monitoring and analytics. This page shows actual screens of the working application.",
     "stack": [
       [
         "Python · FastAPI",
