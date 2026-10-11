@@ -1,72 +1,72 @@
 const copy={
   "ru": {
     "kicker": "QWEN KAGGLE / ОБЛАЧНЫЙ СЕРВЕР ЯЗЫКОВОЙ МОДЕЛИ",
-    "title": "Qwen — языковая модель на облачной видеокарте",
-    "intro": "Qwen Kaggle — собственная среда для работы с большой языковой моделью (LLM). Модель запущена на видеокартах Kaggle, а пользователь обращается к ней через веб-чат или API. Вычисления выполняются на сервере: мощный компьютер не нужен, системные инструкции и параметры ответов можно задавать самостоятельно.",
-    "heroCaption": "Собственный веб-чат: модель преобразует заметки встречи в таблицу задач, ответственных и сроков. Реальный ответ Qwen; данные примера вымышленные.",
-    "taskTitle": "Запустить Qwen как самостоятельный облачный сервис",
-    "task": "Требовалось развернуть языковую модель в собственной управляемой среде: с доступом через браузер и API, настройкой системных инструкций и параметров генерации. Обработка запросов должна выполняться на облачной видеокарте, независимо от мощности компьютера пользователя.\n\nГлавная задача — связать загрузку модели, сервер обработки запросов и удобный интерфейс. Это даёт возможность работать с Qwen с разных компьютеров и подключать её к другим приложениям без обращения к коммерческому LLM API.",
-    "solutionTitle": "Что делает система",
+    "title": "Qwen Kaggle — собственный ИИ-сервер на облачной видеокарте",
+    "intro": "Qwen Kaggle — проект по развёртыванию языковой модели в собственной управляемой облачной среде. Модель работает на видеокартах Kaggle, а взаимодействовать с ней можно через веб-чат или API с любого компьютера, независимо от его мощности.\n\nРешение позволяет самостоятельно управлять настройками модели, подключать её к другим приложениям и работать без коммерческих LLM API и дополнительных фильтров модерации со стороны публичных чат-сервисов.",
+    "heroCaption": "Собственный веб-чат: модель преобразует заметки встречи в таблицу задач, ответственных и сроков. Реальный ответ Qwen на тестовых данных.",
+    "taskTitle": "Создать независимую среду для работы с ИИ-моделями",
+    "task": "Задача заключалась в создании собственной среды для запуска языковых моделей без необходимости иметь мощный компьютер или зависеть от коммерческих ИИ-сервисов.\n\nПринципиально важным было получить больше свободы в использовании ИИ: самостоятельно выбирать модель, управлять её поведением и настройками, не зависеть от дополнительных ограничений и фильтров модерации публичных чат-платформ.\n\nПри этом вычисления должны выполняться на удалённой видеокарте, а доступ к модели — предоставляться через обычный браузер и API. Это позволило бы пользоваться ИИ даже со слабого ноутбука, подключать его к другим компьютерам, приложениям и системам автоматизации.\n\nВ качестве модели для реализации проекта была выбрана Qwen, а вычислительной платформой стал облачный сервис Kaggle.",
+    "solutionTitle": "Как работает система",
     "steps": [
       [
-        "Запускает модель в облаке",
-        "Менеджер подготавливает конфигурацию и запускает сессию Kaggle с GPU. Веса Qwen и токенизатор загружаются на сервер."
+        "Запуск модели в облаке",
+        "Менеджер запуска подготавливает окружение, выбирает конфигурацию и развёртывает языковую модель на GPU-сервере Kaggle. Все вычисления выполняются в облаке, без нагрузки на видеокарту пользователя."
       ],
       [
-        "Даёт собственный интерфейс",
-        "Веб-чат хранит историю текущего диалога и позволяет задавать системную инструкцию, температуру и длину ответа. Интерфейс доступен на русском и английском."
+        "Доступ через собственный веб-чат",
+        "Модель доступна через браузер с компьютеров и других устройств. Интерфейс поддерживает русский и английский языки, историю текущего диалога и настройку системных инструкций, температуры и длины ответа."
       ],
       [
-        "Обрабатывает запросы на сервере",
-        "Генерация выполняется на GPU Kaggle. Через API модель можно подключить к скриптам и приложениям; вычислительные ресурсы компьютера пользователя для этого не требуются."
+        "Интеграция с другими приложениями",
+        "Через API модель можно подключать к собственным программам, скриптам и системам автоматизации. Запросы поступают непосредственно на развёрнутый сервер модели, без использования коммерческого LLM API."
       ],
       [
-        "Передаёт ответы по мере генерации",
-        "Текст появляется постепенно в чате или передаётся через потоковый API. Обычный API возвращает готовый ответ целиком."
+        "Управление генерацией ответов",
+        "Система позволяет самостоятельно задавать инструкции и параметры генерации. Ответы могут возвращаться целиком или передаваться постепенно, по мере формирования текста. Дополнительная модерация на уровне приложения не используется."
       ]
     ],
     "engineering": [
       [
-        "Модель под доступную видеопамять",
-        "Для рабочего запуска выбрана Qwen2.5-7B-Instruct. Четырёхбитное квантование NF4 снижает объём весов, вычисления FP16 и автоматическое размещение согласуют модель с доступными ресурсами. Реальный запуск подтверждён на двух NVIDIA Tesla T4."
+        "Оптимизация модели под облачную видеокарту",
+        "Для проверенной конфигурации выбрана Qwen2.5-7B-Instruct. Четырёхбитное квантование NF4 позволило снизить требования к видеопамяти. Работоспособность подтверждена на облачной сессии с двумя NVIDIA Tesla T4."
       ],
       [
-        "Развёртывание как отдельного сервиса",
-        "Менеджер подготавливает пакет запуска, получает адреса работающей сессии и позволяет завершить её после работы. Модель загружается на облачном сервере, а чат и API обращаются к ней удалённо."
+        "Управление облачной сессией",
+        "Разработан менеджер, который подготавливает запуск модели, получает адреса подключения и позволяет завершить GPU-сессию после работы. Пользователю не требуется вручную настраивать сервер при каждом запуске."
       ],
       [
-        "Один движок для чата и приложений",
-        "Системные инструкции и история диалога приводятся к формату Qwen. Gradio отвечает за интерфейс, FastAPI — за программный доступ. Оба используют одну загруженную модель, поэтому не требуется отдельный запуск для каждого способа работы."
+        "Единая модель для веб-чата и API",
+        "Веб-интерфейс на Gradio и сервер API на FastAPI работают с одной загруженной моделью. Это позволяет использовать её как для обычного общения, так и для программных интеграций без отдельного развёртывания."
       ],
       [
-        "Потоковая выдача и управление доступом",
-        "Генерация выполняется в отдельном потоке; SSE передаёт фрагменты ответа и событие завершения. Чат защищён паролем, API — ключом. Проверка параметров и блокировка одновременной генерации предотвращают некорректные и конкурирующие запросы."
+        "Потоковая генерация и защита доступа",
+        "Реализована постепенная передача ответов через SSE. Веб-чат защищён паролем, API — индивидуальным ключом. Проверка входных параметров и управление одновременными запросами обеспечивают стабильную работу сервера."
       ]
     ],
-    "resultTitle": "Работающая Qwen с собственным чатом и API",
-    "result": "Модель успешно запущена на облачных видеокартах и отвечает на запросы через оба интерфейса. В реальном диалоге Qwen преобразовала заметки встречи в таблицу задач; через API проверены обычный ответ на русском и потоковый ответ на английском.\n\nПолучена управляемая среда, в которой можно задавать инструкции и параметры генерации, использовать модель с разных компьютеров и интегрировать её в свои приложения. Обработка выполняется на сервере Kaggle без обращения к коммерческому LLM API.",
-    "secondCaption": "Тот же сценарий в английском интерфейсе: таблица заново сформирована моделью. Реальный результат генерации.",
-    "proof": "Все четыре автоматических теста разбора данных пройдены. В реальной GPU-сессии проверены обычная генерация, потоковая передача текста и корректное завершение ответа, отказ в доступе без ключа и отклонение некорректного параметра.\n\nДополнительно проведена ручная проверка веб-чата на русском и английском: отправка запросов, получение ответов и работа интерфейса. На странице представлены реальные экраны и ответы модели. После проверки выделенная GPU-сессия завершена.",
+    "resultTitle": "Собственный облачный ИИ-сервер с веб-чатом и API",
+    "result": "Создана работающая среда для запуска языковой модели на удалённой видеокарте. Пользователь может взаимодействовать с ней через браузер, самостоятельно настраивать генерацию ответов и подключать модель к сторонним приложениям через API.\n\nСистема успешно проверена на реальной GPU-сессии Kaggle. Подтверждена работа веб-чата на русском и английском языках, обычной и потоковой генерации через API.\n\nГлавный результат — возможность использовать языковую модель как собственный управляемый сервис: без мощного локального оборудования, без коммерческих LLM API и без дополнительной модерации на уровне приложения. При этом собственные ограничения выбранной модели и правила облачной платформы сохраняются.",
+    "secondCaption": "Тот же сценарий в английской версии веб-чата. Таблица сформирована моделью в ходе реальной генерации.",
+    "proof": "Все четыре автоматических теста обработки данных успешно пройдены. В реальной GPU-сессии проверены генерация ответов, потоковая передача текста, корректное завершение запросов, защита API-ключом и обработка некорректных параметров.\n\nДополнительно проведено ручное тестирование веб-чата на русском и английском языках: проверены отправка запросов, получение ответов, настройки генерации и работа интерфейса.\n\nНа странице представлены реальные скриншоты работающего приложения и ответы модели. После завершения проверки облачная GPU-сессия была остановлена.",
     "stack": [
       [
         "Python · PyTorch · Transformers",
-        "Загрузка весов и токенизатора, выполнение генерации."
+        "Загрузка языковой модели, обработка запросов и генерация ответов."
       ],
       [
         "BitsAndBytes · NF4",
-        "Квантование модели для снижения требований к видеопамяти."
+        "Четырёхбитное квантование для снижения требований к видеопамяти."
       ],
       [
         "FastAPI · SSE",
-        "API для приложений и потоковая передача ответов."
+        "Программный интерфейс для подключения внешних приложений и потоковой передачи ответов."
       ],
       [
         "Gradio",
-        "Собственный веб-чат с историей и настройками."
+        "Веб-чат с историей диалога, настройками генерации и поддержкой двух языков."
       ],
       [
         "Kaggle · NVIDIA Tesla T4",
-        "Облачный запуск и вычисления на GPU."
+        "Облачная инфраструктура для запуска модели и выполнения вычислений на GPU."
       ]
     ],
     "back": "← Все работы",
@@ -83,72 +83,72 @@ const copy={
   },
   "en": {
     "kicker": "QWEN KAGGLE / CLOUD LANGUAGE-MODEL SERVER",
-    "title": "Qwen — a language model on cloud GPUs",
-    "intro": "Qwen Kaggle is a self-managed environment for a large language model (LLM). Qwen runs on Kaggle GPUs, accessed through a web chat or API. Computation takes place on the server, so users do not need a powerful computer and can control system instructions and generation parameters.",
-    "heroCaption": "Custom web chat: Qwen transforms meeting notes into a table of tasks, owners and deadlines. Actual model output; sample notes are fictional.",
-    "taskTitle": "Deploy Qwen as a standalone cloud service",
-    "task": "The task was to deploy a language model in a self-managed environment with browser and API access, configurable system instructions and generation settings. Requests needed to run on a cloud GPU, independently of the user’s computer performance.\n\nModel loading, a request server and a usable interface needed to work together. This enables access from different computers and integration with other applications without calling a commercial LLM API.",
-    "solutionTitle": "What the system does",
+    "title": "Qwen Kaggle — a self-managed AI server on cloud GPUs",
+    "intro": "Qwen Kaggle deploys a language model in a self-managed cloud environment. The model runs on Kaggle GPUs and is accessible through a web chat or API from any computer, regardless of its performance.\n\nThe solution provides control over model settings, connections to other applications, and operation without commercial LLM APIs or additional moderation filters from public chat services.",
+    "heroCaption": "Custom web chat: Qwen transforms meeting notes into a table of tasks, owners and deadlines. Actual Qwen output on test data.",
+    "taskTitle": "Create an independent environment for working with AI models",
+    "task": "The task was to create a self-managed environment for running language models without powerful local hardware or dependence on commercial AI services.\n\nA key requirement was greater freedom in using AI: choosing the model, controlling its behaviour and settings, and avoiding additional restrictions and moderation filters imposed by public chat platforms.\n\nComputation needed to run on a remote GPU, with access through a standard browser and API. This would enable use from a modest laptop and connections to other computers, applications and automation systems.\n\nQwen was selected as the model and Kaggle as the cloud computing platform.",
+    "solutionTitle": "How the system works",
     "steps": [
       [
         "Deploy the model in the cloud",
-        "The manager prepares configuration and starts a Kaggle GPU session. Qwen weights and tokenizer load on the server."
+        "The deployment manager prepares the environment, selects configuration and deploys the language model on a Kaggle GPU server. All computation runs in the cloud without using the user’s GPU."
       ],
       [
-        "Provide a custom interface",
-        "The web chat keeps the current conversation history and provides system instructions, temperature and response-length controls. The interface supports Russian and English."
+        "Access through a custom web chat",
+        "The model is accessible in a browser from computers and other devices. The interface supports Russian and English, current conversation history, system instructions, temperature and response-length controls."
       ],
       [
-        "Process requests on the server",
-        "Generation runs on Kaggle GPUs. The API connects the model to scripts and applications without requiring the user’s computer to perform model inference."
+        "Integrate with other applications",
+        "The API connects the model to custom programs, scripts and automation systems. Requests go directly to the deployed model server without using a commercial LLM API."
       ],
       [
-        "Deliver answers as they are generated",
-        "Text appears progressively in chat or through the streaming API. The regular API returns the complete answer."
+        "Control response generation",
+        "Users set instructions and generation parameters. Responses return in full or stream as text is generated. No additional application-level moderation is used."
       ]
     ],
     "engineering": [
       [
-        "Fit the model to available GPU memory",
-        "Qwen2.5-7B-Instruct was selected for the working deployment. Four-bit NF4 reduces weight size, while FP16 computation and automatic placement align the model with available resources. The actual deployment was verified on two NVIDIA Tesla T4 GPUs."
+        "Optimise the model for cloud GPUs",
+        "The verified configuration uses Qwen2.5-7B-Instruct. Four-bit NF4 quantization reduced GPU memory requirements. Operation was confirmed in a cloud session with two NVIDIA Tesla T4 GPUs."
       ],
       [
-        "Deploy as a separate service",
-        "The manager prepares the deployment package, retrieves active session addresses and supports stopping the session. The model loads on the cloud server, accessed remotely through chat and API."
+        "Manage the cloud session",
+        "A manager prepares model deployment, retrieves connection addresses and supports stopping the GPU session. Users do not need to configure the server manually for every launch."
       ],
       [
-        "One engine for chat and applications",
-        "System instructions and conversation history use the Qwen format. Gradio provides the interface; FastAPI handles programmatic access. Both use one loaded model, avoiding a separate deployment for each interface."
+        "One model for web chat and API",
+        "The Gradio web interface and FastAPI server share one loaded model. It supports both conversation and programmatic integration without a separate deployment."
       ],
       [
-        "Streaming and access control",
-        "Generation runs in a worker thread; SSE carries text fragments and a completion event. Chat requires a password, and the API requires a key. Parameter validation and a shared generation lock prevent invalid and competing requests."
+        "Streaming generation and access protection",
+        "SSE delivers answers progressively. The web chat requires a password, and the API requires an individual key. Input validation and concurrent-request management support stable server operation."
       ]
     ],
-    "resultTitle": "Working Qwen with a custom chat and API",
-    "result": "The model was successfully deployed on cloud GPUs and responds through both interfaces. In a real conversation, Qwen transformed meeting notes into an action-item table. API checks confirmed a regular Russian answer and an English streaming response.\n\nThe resulting environment provides configurable instructions and generation settings, access from different computers and integration with applications. Requests run on Kaggle without calling a commercial LLM API.",
-    "secondCaption": "The same workflow in the English interface, with a table freshly generated by the model. Actual generation output.",
-    "proof": "All four automated parser tests passed. A live GPU session verified regular generation, streaming and response completion, rejection without an API key, and invalid-parameter handling.\n\nThe Russian and English web chat was also checked manually for sending requests, receiving responses and interface operation. This page shows actual application screens and model answers. The allocated GPU session was stopped after verification.",
+    "resultTitle": "A self-managed cloud AI server with web chat and API",
+    "result": "A working environment was created for running a language model on a remote GPU. Users can interact through a browser, configure response generation and connect the model to other applications through the API.\n\nThe system was successfully verified in a real Kaggle GPU session. Russian and English web chat, regular API generation and streaming API generation were confirmed.\n\nThe main result is a language model available as a self-managed service, without powerful local hardware, commercial LLM APIs or additional application-level moderation. The selected model’s own restrictions and cloud-platform rules still apply.",
+    "secondCaption": "The same workflow in the English web chat. The table was produced during actual model generation.",
+    "proof": "All four automated data-processing tests passed. A real GPU session verified response generation, streaming text, request completion, API-key protection and invalid-parameter handling.\n\nThe Russian and English web chat was also tested manually: sending requests, receiving answers, generation controls and interface operation.\n\nThis page shows actual screenshots of the working application and model responses. The cloud GPU session was stopped after verification.",
     "stack": [
       [
         "Python · PyTorch · Transformers",
-        "Load weights and tokenizer, and run generation."
+        "Language-model loading, request processing and response generation."
       ],
       [
         "BitsAndBytes · NF4",
-        "Model quantization to reduce GPU memory requirements."
+        "Four-bit quantization to reduce GPU memory requirements."
       ],
       [
         "FastAPI · SSE",
-        "Application API and streaming responses."
+        "Programmatic access for external applications and streaming responses."
       ],
       [
         "Gradio",
-        "Custom web chat with history and controls."
+        "Web chat with conversation history, generation controls and two interface languages."
       ],
       [
         "Kaggle · NVIDIA Tesla T4",
-        "Cloud deployment and GPU computation."
+        "Cloud infrastructure for model deployment and GPU computation."
       ]
     ],
     "back": "← All projects",
