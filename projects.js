@@ -102,6 +102,40 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
+    "id": "marketlens",
+    "category": "monitor",
+    "type": {
+      "ru": "Исследование рынка вакансий",
+      "en": "Job market research"
+    },
+    "title": {
+      "ru": "MarketLens — аналитика рынка перед наймом",
+      "en": "MarketLens — job market research before hiring"
+    },
+    "summary": {
+      "ru": "Реальные вакансии HH и «Работы России»: работодатели, зарплаты и требования по выбранной профессии. Фильтры, основания и отчёты.",
+      "en": "Real HH and Jobs in Russia listings: employers, salaries and requirements for a chosen profession. Filters, evidence and reports."
+    },
+    "image": "work/marketlens/assets/overview.png",
+    "alt": {
+      "ru": "Работающий MarketLens: сохранённый анализ вакансий геодезиста",
+      "en": "Actual MarketLens analysis of saved surveyor listings; Russian interface"
+    },
+    "url": "work/marketlens/",
+    "tags": {
+      "ru": [
+        "HH + Работа России",
+        "Зарплаты и компании",
+        "Поисковый помощник"
+      ],
+      "en": [
+        "HH + Jobs in Russia",
+        "Pay & employers",
+        "Search assistant"
+      ]
+    }
+  },
+  {
     "id": "retail-intelligence",
     "category": "monitor",
     "type": {
