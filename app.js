@@ -39,7 +39,7 @@ for(const p of projects){
 const card=document.createElement('a');card.className='project-card';card.href=p.url+'?lang='+lang;
 const preview=document.createElement('div');preview.className='project-preview';
 if(p.image){const im=document.createElement('img');im.src=p.images?.[lang]||p.image;im.alt=p.alt?.[lang]||p.title[lang];im.loading='lazy';preview.append(im);}
-if(['auction-scout','qwen-kaggle','motorscope'].includes(p.id))preview.classList.add('interface-preview');
+if(['qwen-kaggle'].includes(p.id))preview.classList.add('interface-preview');
 const badge=document.createElement('span');badge.className='project-badge';badge.textContent=p.type[lang];preview.append(badge);card.append(preview);
 const content=document.createElement('div');content.className='project-card-content';
 const title=document.createElement('h3');title.textContent=p.title[lang];
