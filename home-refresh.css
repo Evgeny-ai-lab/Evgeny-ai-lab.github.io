@@ -1,0 +1,32 @@
+/* Homepage experiment. Loaded only by index.html; case pages are unchanged. */
+:root{--paper:#f6f5f0;--ink:#14211b;--muted:#5b675f;--green:#14342b;--lime:#c8f169;--line:#e3e1d8}
+body{font-size:17px;line-height:1.65}
+.header{position:sticky;top:0;z-index:15;height:86px;background:rgba(246,245,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);width:min(1120px,calc(100% - 48px));gap:22px}
+.wrap{width:min(1080px,calc(100% - 64px))}
+.monogram{height:43px;border-radius:12px;font-size:25px}.monogram svg{width:18px;height:18px;color:var(--lime)}
+.icon{width:18px;height:18px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.github-link{display:flex;align-items:center;gap:8px}.menu-button{border-radius:50%;align-items:center;justify-content:center}
+.languages button{border-radius:20px;padding:8px 10px}.languages button[aria-pressed=true]{background:#e9ecdf}
+.work-hero{margin-top:24px;padding:48px 48px 42px;border-radius:24px;background:radial-gradient(ellipse at 95% 0%,rgba(200,241,105,.16),transparent 65%),var(--green);color:#fff}
+.work-hero .eyebrow{color:#dae7dc;font-size:12px;letter-spacing:.08em;margin:0 0 20px}.work-hero .dot{background:var(--lime)}
+.work-hero h1{font-size:clamp(38px,5.5vw,70px);font-weight:700;letter-spacing:-.04em;margin:0 0 18px;line-height:1.08}
+.work-hero .intro{font-size:18px;line-height:1.65;color:#d8e3db;max-width:660px;margin:0}
+.home-work-link{display:inline-flex;align-items:center;gap:22px;margin-top:26px;padding:12px 20px;border-radius:999px;background:var(--lime);color:var(--ink);font-size:14px;font-weight:650;transition:transform .18s,background .18s}.home-work-link:hover{background:#daf69d;transform:translateY(-2px)}
+.eyebrow{font-size:12px;letter-spacing:.08em;font-weight:650}
+.work-section{background:transparent;border:0}#work .section{padding:64px 0 80px}#work .section-heading{gap:40px;margin-bottom:28px}#work h2{font-size:clamp(28px,3vw,40px)}
+.section-intro{font-size:14px;line-height:1.65;max-width:340px}
+.filters{gap:8px;margin-bottom:30px}.filter{border-radius:999px;background:#fff;border-color:var(--line);font-size:12px;padding:9px 14px;transition:background .18s,border-color .18s}.filter:hover{background:#ecf0e5}.filter[aria-pressed=true]{background:var(--green);color:#fff}
+.project-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.project-card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 2px rgba(20,33,27,.03),0 12px 32px rgba(20,33,27,.035);transition:transform .18s,box-shadow .18s,border-color .18s;display:flex;flex-direction:column;min-width:0}
+.project-card:hover{transform:translateY(-4px);border-color:#c2d0bf;box-shadow:0 12px 28px rgba(20,33,27,.09)}
+.project-card img{aspect-ratio:16/10;object-fit:cover;background:#eef0e9;border-bottom:1px solid var(--line)}
+.project-card-content{padding:25px;display:flex;flex-direction:column;flex:1}.project-card h3{font-size:22px;line-height:1.35;letter-spacing:-.025em;margin:12px 0}.project-card p{font-size:14px;line-height:1.7;margin:0 0 18px}.project-tags{font-size:10px;gap:7px}.project-tags span{background:#f0f2eb;padding:4px 8px;border-radius:5px}.project-card .text-link{margin-top:auto;font-size:13px}
+.empty-state{background:rgba(255,255,255,.45);border:1px dashed #c7cec2;padding:28px}.empty-symbol{background:#e9eee0}.empty-symbol svg{width:24px;height:24px}.empty-state p{font-size:13px}.empty-label{font-size:10px}
+.about-section{padding:0 0 80px}.about-section>.section-heading{border-top:1px solid var(--line);padding-top:64px}.about-section h2{font-size:clamp(28px,3.4vw,42px)}.about-lead{font-size:17px;max-width:850px;margin:24px 0 32px}.about-grid{gap:26px 44px}.about-grid h3{font-size:18px}.about-grid p{font-size:15px}.competencies p{font-size:14px}
+.contact{padding:38px 40px;border-radius:20px}.contact h2{font-size:30px}.contact p:not(.eyebrow){font-size:14px}.contact .eyebrow{color:#d8e3db;font-size:11px}.contact .button{border-radius:999px}.footer{font-size:11px;padding:30px 0}
+a:focus-visible,button:focus-visible{outline:3px solid #758f41;outline-offset:4px}
+@media(max-width:760px){.header{height:76px;width:calc(100% - 36px)}.menu-button{display:flex}.header nav{top:70px;background:#f6f5f0}.wrap{width:calc(100% - 36px)}.work-hero{padding:32px 26px;margin-top:18px;border-radius:18px}.work-hero .eyebrow{font-size:10px}.work-hero .intro{font-size:16px}.home-work-link{font-size:13px;margin-top:22px}#work .section{padding:44px 0 56px}.section-intro{font-size:14px}.project-list{gap:20px}.project-card-content{padding:21px}.project-card h3{font-size:20px}.filter{font-size:11px}.about-section{padding-bottom:56px}.about-section>.section-heading{padding-top:44px}.about-grid{grid-template-columns:1fr}.contact{padding:30px 26px}.footer{font-size:10px}}
+@media(max-width:600px){.project-list{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.project-card,.home-work-link,.filter{transition:none}.project-card:hover,.home-work-link:hover{transform:none}}
+h1,h2,h3{overflow-wrap:anywhere}.project-card-content,.section-heading>div,.contact>div{min-width:0}@media(max-width:480px){.header{gap:10px}.header-actions{gap:7px}.languages{gap:2px}.languages button{padding:7px 6px}.contact .button{max-width:100%}.about-section h2{font-size:28px}}
+@media(max-width:760px){.github-link{display:none}}
