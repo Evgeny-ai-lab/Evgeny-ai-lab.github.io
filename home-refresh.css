@@ -53,3 +53,17 @@ body{background:#f6f5f0}
 @media(max-width:1050px){.header{padding:0 20px}.brand-name{font-size:17px}.header-actions{gap:12px}.work-hero{padding:130px 40px 52px}.work-hero .intro{max-width:640px}}
 @media(max-width:760px){.header{top:12px;height:64px;width:calc(100% - 28px);padding:0 16px;border-radius:13px;gap:12px}.brand-name{font-size:16px}.monogram{font-size:28px}.header nav{top:70px;left:0;right:0;background:#f6f5f0}.header-actions{gap:8px}.work-hero{padding:118px 26px 42px;min-height:390px}.work-hero h1{font-size:clamp(40px,8vw,62px)}.work-hero .intro{font-size:17px}.work-hero .eyebrow{font-size:10px}.hero-orbits{opacity:.3}.hero-links{gap:10px;flex-wrap:wrap}.home-work-link,.home-about-link{padding:11px 16px;gap:14px;font-size:13px;border-radius:10px}.github-link{display:none}#work .section-intro{font-size:16px}#work .section{padding-top:34px}.languages button{padding:5px 7px}}
 @media(max-width:400px){.brand-name{font-size:13px}.monogram{font-size:25px}.brand{gap:5px}.header{padding:0 12px}.header-actions{gap:5px}.header .menu-button{width:30px}.languages button{padding:5px}.work-hero{padding-left:20px;padding-right:20px}.work-hero h1{font-size:40px}}
+/* Reference-inspired closing section, only on the homepage. */
+.competencies{margin-top:30px;padding-top:22px}.competency-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.competency-tags span{font-size:12px;font-weight:550;line-height:1.4;color:#486057;background:#fafbf6;border:1px solid #e0e4da;padding:9px 14px;border-radius:999px;box-shadow:0 2px 5px rgba(20,33,27,.025)}
+.about-section{padding-bottom:40px}
+.contact{position:relative;display:grid;grid-template-columns:1fr 1.25fr;gap:38px;background:radial-gradient(ellipse at 99% 100%,rgba(193,215,169,.55),transparent 35%),#f4f8e9;color:var(--ink);padding:34px 40px;border:1px solid #edf0e4;border-radius:18px;overflow:hidden;isolation:isolate}
+.contact:before,.contact:after{content:'';position:absolute;z-index:-1;border-radius:50%;pointer-events:none;transform:rotate(-35deg)}
+.contact:before{width:200px;height:310px;right:65px;top:-210px;background:linear-gradient(135deg,#d5f489,#e8f4cf)}
+.contact:after{width:260px;height:390px;right:-80px;bottom:-330px;border:50px solid rgba(202,231,144,.5)}
+.contact .eyebrow{color:#5b7063;font-size:11px;letter-spacing:.09em;margin-bottom:12px}
+.contact h2{font-size:clamp(27px,3vw,36px);font-weight:750;line-height:1.12;letter-spacing:-.035em}
+.contact-detail{border-left:1px solid #d5ddc9;padding-left:38px;position:relative}
+.contact p:not(.eyebrow){color:#5b6d61;font-size:14px;line-height:1.6;max-width:410px;margin:0 0 18px}
+.contact .button.primary{background:#14342b;color:#fff;padding:12px 18px;border-radius:11px;font-size:13px;gap:24px}.contact .button:hover{background:#245044}
+.footer{padding-top:22px;padding-bottom:25px;justify-content:flex-start;gap:18px;font-size:11px}.footer>span:nth-child(2){border-left:1px solid #b6c0b4;padding-left:18px}.footer>a{margin-left:auto}
+@media(max-width:760px){.contact{grid-template-columns:1fr;gap:22px;padding:28px 25px}.contact-detail{border-left:0;border-top:1px solid #d5ddc9;padding:20px 0 0}.contact h2{font-size:30px}.contact p:not(.eyebrow){font-size:14px}.about-section{padding-bottom:30px}.competency-tags{gap:7px}.competency-tags span{font-size:11px;padding:8px 11px}.footer{font-size:10px;gap:10px}.contact:before{right:-20px}}
