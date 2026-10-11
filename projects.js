@@ -68,36 +68,36 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
-    "id": "motorscope",
-    "category": "monitor",
+    "id": "medflow",
+    "category": "process",
     "type": {
-      "ru": "Аналитика авторынка",
-      "en": "Vehicle market analytics"
+      "ru": "Автоматизация документов",
+      "en": "Document automation"
     },
     "title": {
-      "ru": "MotorScope — мониторинг рынка авто и мото",
-      "en": "MotorScope — vehicle market monitoring"
+      "ru": "Medflow — подготовка направлений",
+      "en": "Medflow — referral preparation"
     },
     "summary": {
-      "ru": "Мониторинг выбранных моделей: цены, сроки предложения, новые и снятые объявления. Аналитика для оценки рынка и планирования закупок.",
-      "en": "Selected-model monitoring: prices, time on the market, new and removed listings. Analytics for market assessment and purchasing plans."
+      "ru": "Данные из PDF или формы, требования из справочника, готовые направления в PDF и Excel и личный архив.",
+      "en": "PDF or form input, reference requirements, completed PDF and Excel referrals and a personal archive."
     },
-    "image": "work/motorscope/assets/overview.png",
+    "image": "work/medflow/assets/workspace.png",
     "alt": {
-      "ru": "Работающий MotorScope: цены и предложение Ford Bronco Sport",
-      "en": "Actual MotorScope overview of Ford Bronco Sport supply and prices; Russian interface"
+      "ru": "Форма подготовки направления. Все данные, названия и значения справочника вымышлены.",
+      "en": "Referral preparation form. All personal details, names and reference values are fictional; Russian interface."
     },
-    "url": "work/motorscope/",
+    "url": "work/medflow/",
     "tags": {
       "ru": [
-        "Сбор данных",
-        "История цен",
-        "Интерактивные графики"
+        "Документооборот",
+        "PDF и Excel",
+        "Скриптовая автоматизация"
       ],
       "en": [
-        "Data collection",
-        "Price history",
-        "Interactive charts"
+        "Document workflow",
+        "PDF and Excel",
+        "Script automation"
       ]
     }
   },
@@ -204,8 +204,110 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
+    "id": "motorscope",
+    "category": "monitor",
+    "type": {
+      "ru": "Аналитика авторынка",
+      "en": "Vehicle market analytics"
+    },
+    "title": {
+      "ru": "MotorScope — мониторинг рынка авто и мото",
+      "en": "MotorScope — vehicle market monitoring"
+    },
+    "summary": {
+      "ru": "Мониторинг выбранных моделей: цены, сроки предложения, новые и снятые объявления. Аналитика для оценки рынка и планирования закупок.",
+      "en": "Selected-model monitoring: prices, time on the market, new and removed listings. Analytics for market assessment and purchasing plans."
+    },
+    "image": "work/motorscope/assets/overview.png",
+    "alt": {
+      "ru": "Работающий MotorScope: цены и предложение Ford Bronco Sport",
+      "en": "Actual MotorScope overview of Ford Bronco Sport supply and prices; Russian interface"
+    },
+    "url": "work/motorscope/",
+    "tags": {
+      "ru": [
+        "Сбор данных",
+        "История цен",
+        "Интерактивные графики"
+      ],
+      "en": [
+        "Data collection",
+        "Price history",
+        "Interactive charts"
+      ]
+    }
+  },
+  {
+    "id": "stock-insights",
+    "category": "monitor",
+    "type": {
+      "ru": "Исследование тем для стоков",
+      "en": "Stock content research"
+    },
+    "title": {
+      "ru": "Stock Insights — темы для стоковых изображений",
+      "en": "Stock Insights — stock image topic research"
+    },
+    "summary": {
+      "ru": "Собирает сигналы интереса, объясняет приоритет тем и готовит визуальные задания для генератора в CSV.",
+      "en": "Collects interest signals, explains topic priorities and exports visual briefs for an image generator."
+    },
+    "image": "work/stock-insights/assets/topics.png",
+    "alt": {
+      "ru": "Темы для генерации: конкретные сюжеты, приоритет исследования и основания из собранных материалов.",
+      "en": "Generation topics: concrete subjects, research priority and evidence from collected materials; Russian interface."
+    },
+    "url": "work/stock-insights/",
+    "tags": {
+      "ru": [
+        "Сбор данных",
+        "Анализ трендов",
+        "CSV для генератора"
+      ],
+      "en": [
+        "Data collection",
+        "Trend research",
+        "Generator CSV"
+      ]
+    }
+  },
+  {
+    "id": "all-stock",
+    "category": "process",
+    "type": {
+      "ru": "Производство стокового контента",
+      "en": "Stock content production"
+    },
+    "title": {
+      "ru": "All Stock — от тем до изображений и метаданных",
+      "en": "All Stock — topics to images and metadata"
+    },
+    "summary": {
+      "ru": "Промпты, генерация 4K через API, очистка файлов и отдельные CSV для стоков в одном процессе.",
+      "en": "Prompts, 4K generation through APIs, file cleanup and stock-specific CSV exports in one workflow."
+    },
+    "image": "work/all-stock/assets/prompts.png",
+    "alt": {
+      "ru": "Генератор промптов: режим, LLM, формат CSV, организация папок и сохранённая рабочая сессия.",
+      "en": "Prompt generator: workflow mode, LLM, CSV format, folder organization and a saved session; Russian interface."
+    },
+    "url": "work/all-stock/",
+    "tags": {
+      "ru": [
+        "Генеративный контент",
+        "API-интеграции",
+        "Автоматизация"
+      ],
+      "en": [
+        "Generative content",
+        "API integrations",
+        "Automation"
+      ]
+    }
+  },
+  {
     "id": "qwen-kaggle",
-    "category": "ai",
+    "category": "services",
     "type": {
       "ru": "ИИ-чат и API",
       "en": "AI chat & API"
@@ -243,7 +345,7 @@ window.PORTFOLIO_PROJECTS=[
   },
   {
     "id": "cloud-gpu-upscale",
-    "category": "content",
+    "category": "services",
     "type": {
       "ru": "ИИ-апскейл изображений",
       "en": "AI image upscaling"
@@ -272,108 +374,6 @@ window.PORTFOLIO_PROJECTS=[
         "ONNX",
         "NVIDIA L4",
         "16-bit PNG"
-      ]
-    }
-  },
-  {
-    "id": "stock-insights",
-    "category": "data",
-    "type": {
-      "ru": "Исследование тем для стоков",
-      "en": "Stock content research"
-    },
-    "title": {
-      "ru": "Stock Insights — темы для стоковых изображений",
-      "en": "Stock Insights — stock image topic research"
-    },
-    "summary": {
-      "ru": "Собирает сигналы интереса, объясняет приоритет тем и готовит визуальные задания для генератора в CSV.",
-      "en": "Collects interest signals, explains topic priorities and exports visual briefs for an image generator."
-    },
-    "image": "work/stock-insights/assets/topics.png",
-    "alt": {
-      "ru": "Темы для генерации: конкретные сюжеты, приоритет исследования и основания из собранных материалов.",
-      "en": "Generation topics: concrete subjects, research priority and evidence from collected materials; Russian interface."
-    },
-    "url": "work/stock-insights/",
-    "tags": {
-      "ru": [
-        "Сбор данных",
-        "Анализ трендов",
-        "CSV для генератора"
-      ],
-      "en": [
-        "Data collection",
-        "Trend research",
-        "Generator CSV"
-      ]
-    }
-  },
-  {
-    "id": "all-stock",
-    "category": "content",
-    "type": {
-      "ru": "Производство стокового контента",
-      "en": "Stock content production"
-    },
-    "title": {
-      "ru": "All Stock — от тем до изображений и метаданных",
-      "en": "All Stock — topics to images and metadata"
-    },
-    "summary": {
-      "ru": "Промпты, генерация 4K через API, очистка файлов и отдельные CSV для стоков в одном процессе.",
-      "en": "Prompts, 4K generation through APIs, file cleanup and stock-specific CSV exports in one workflow."
-    },
-    "image": "work/all-stock/assets/prompts.png",
-    "alt": {
-      "ru": "Генератор промптов: режим, LLM, формат CSV, организация папок и сохранённая рабочая сессия.",
-      "en": "Prompt generator: workflow mode, LLM, CSV format, folder organization and a saved session; Russian interface."
-    },
-    "url": "work/all-stock/",
-    "tags": {
-      "ru": [
-        "Генеративный контент",
-        "API-интеграции",
-        "Автоматизация"
-      ],
-      "en": [
-        "Generative content",
-        "API integrations",
-        "Automation"
-      ]
-    }
-  },
-  {
-    "id": "medflow",
-    "category": "process",
-    "type": {
-      "ru": "Автоматизация документов",
-      "en": "Document automation"
-    },
-    "title": {
-      "ru": "Medflow — подготовка направлений",
-      "en": "Medflow — referral preparation"
-    },
-    "summary": {
-      "ru": "Данные из PDF или формы, требования из справочника, готовые направления в PDF и Excel и личный архив.",
-      "en": "PDF or form input, reference requirements, completed PDF and Excel referrals and a personal archive."
-    },
-    "image": "work/medflow/assets/workspace.png",
-    "alt": {
-      "ru": "Форма подготовки направления. Все данные, названия и значения справочника вымышлены.",
-      "en": "Referral preparation form. All personal details, names and reference values are fictional; Russian interface."
-    },
-    "url": "work/medflow/",
-    "tags": {
-      "ru": [
-        "Документооборот",
-        "PDF и Excel",
-        "Скриптовая автоматизация"
-      ],
-      "en": [
-        "Document workflow",
-        "PDF and Excel",
-        "Script automation"
       ]
     }
   }
