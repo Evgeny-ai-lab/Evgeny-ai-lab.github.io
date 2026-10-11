@@ -2,74 +2,74 @@ const copy={
   "ru": {
     "kicker": "STOCK INSIGHTS / ИССЛЕДОВАНИЕ ТЕМ ДЛЯ СТОКОВ",
     "title": "Поиск перспективных тем для стоковых изображений",
-    "intro": "Stock Insights помогает выбирать темы для генерации изображений, предназначенных для продажи на стоках. Приложение собирает публичные сигналы интереса, оценивает актуальность сюжетов и показывает основания для выбора. Отобранные темы вместе с визуальными заданиями можно передать в генератор.",
+    "intro": "Stock Insights — приложение для поиска перспективных тем перед генерацией изображений на продажу в фотостоках. Система автоматически собирает и анализирует данные из открытых источников, выявляет актуальные тенденции и предлагает конкретные темы с описанием визуального контекста. Готовые задания можно экспортировать для дальнейшей генерации.",
     "status": "Работающее приложение · Проверено на реальных данных",
-    "taskTitle": "Выбирать темы до начала генерации",
-    "task": "Для производства стокового контента нужен не просто список идей, а обоснованный выбор: какие сюжеты актуальны сейчас, где растёт интерес и какие темы стоит подготовить к ближайшим событиям. Ручная проверка нескольких площадок занимает время, а отдельный популярный запрос ещё не даёт полной картины.\n\nЗадача — объединить доступные сигналы, расставить приоритеты и превратить исследование в конкретные задания для генерации. Цель такого отбора — направлять производство на перспективные темы для продажи на стоках.",
+    "taskTitle": "Определить, какие изображения стоит создавать для фотостоков",
+    "task": "Для успешной продажи изображений на фотостоках важно не только качество генерации, но и правильный выбор тем. Необходимо понимать, какие сюжеты набирают популярность, что привлекает внимание аудитории сейчас и какие направления могут стать актуальными в ближайшем будущем.\n\nРучное исследование поисковых трендов, стоковых площадок, новостей и сезонных событий требует значительного времени.\n\nЗадача — автоматизировать сбор и анализ данных из разных источников, чтобы находить перспективные темы и превращать результаты исследования в конкретные задания для генерации изображений.",
     "solutionTitle": "Что делает приложение",
     "steps": [
       [
-        "Собирает основания для выбора",
-        "Объединяет публичные материалы стоковых площадок, поисковые и визуальные тренды, новостные упоминания и просмотры статей. Сохраняет источник и дату каждого наблюдения."
+        "Собирает данные из разных источников",
+        "Анализирует публичные данные фотостоков, поисковые и визуальные тренды, новости и интерес к публикациям. Учитывает сезонность, предстоящие события и актуальность информации."
       ],
       [
-        "Выделяет конкретные сюжеты",
-        "Из собранных материалов извлекает предметы и действия. Вместо общих направлений формирует короткие английские темы, пригодные для подготовки изображений."
+        "Находит перспективные темы",
+        "Из собранных материалов выделяет конкретные объекты и сюжеты, которые можно использовать для создания изображений. Формирует краткие названия тем на английском языке вместо общих направлений."
       ],
       [
-        "Расставляет приоритеты",
-        "Учитывает свежесть, динамику интереса, независимые источники и визуальные сигналы. Карточка раскрывает составляющие рейтинга, графики и исходные материалы."
+        "Оценивает актуальность и расставляет приоритеты",
+        "Сопоставляет динамику интереса, свежесть информации и подтверждения из независимых источников. Каждая тема получает рейтинг с возможностью изучить основания для оценки."
       ],
       [
-        "Готовит задания для генератора",
-        "Добавляет английский визуальный контекст и выгружает выбранные темы или партии в CSV. История экспорта помогает не повторять уже подготовленные задания."
+        "Подготавливает задания для генерации",
+        "Для каждой темы создаёт визуальный контекст — описание того, что и как должно быть изображено. Выбранные темы и описания экспортируются в CSV для последующей генерации. История экспорта помогает избегать повторов."
       ]
     ],
     "interactiveTitle": "Почему тема попала в подборку",
-    "interactive": "Выбор опирается на несколько оснований: актуальные упоминания, изменение интереса и подтверждение в независимых источниках. В карточке можно проверить вклад каждого сигнала и изучить динамику.\n\nРейтинг помогает выбрать темы для дальнейшей работы, но не является вероятностью продажи. Публичный интерес и количество результатов на стоках показываются отдельно от покупательского спроса.",
-    "heroCaption": "Темы для генерации: конкретные сюжеты, приоритет исследования и основания из собранных материалов.",
-    "explorerCaption": "Карточка solar panel: визуальный контекст, составляющие рейтинга и данные публичного стокового поиска.",
-    "filteredCaption": "Обзор исследования: динамика доступных сигналов и темы с основаниями для выбора.",
+    "interactive": "Каждая рекомендация подкрепляется доступными данными: актуальными упоминаниями, динамикой интереса и подтверждениями из нескольких источников. В карточке темы можно изучить составляющие рейтинга, графики и исходные материалы.\n\nРейтинг отражает приоритетность темы для дальнейшей работы, а не гарантирует продажи. Публичный интерес и количество изображений на стоках рассматриваются как ориентиры, а не как прямые показатели покупательского спроса.",
+    "heroCaption": "Темы для генерации: рейтинг перспективности, визуальный контекст и основания для выбора.",
+    "explorerCaption": "Карточка темы: визуальный контекст, составляющие рейтинга и данные источников.",
+    "filteredCaption": "Обзор исследования: динамика интереса, актуальные направления и основания для выбора.",
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
-        "Несколько источников в одной системе",
-        "Разные форматы приводятся к общей структуре. Исходные ответы сохраняются с адресом, временем и контрольной суммой, чтобы выводы можно было проверить."
+        "Объединение нескольких источников",
+        "Данные разных форматов приводятся к единой структуре. Сохраняются ссылки, даты и исходные материалы, позволяющие проверить результаты анализа."
       ],
       [
-        "Динамика вместо случайного всплеска",
-        "Новостное внимание сравнивается по завершённым четырёхнедельным окнам с учётом размера выборки. Неполная история или малая база не превращаются в уверенный показатель роста."
+        "Анализ динамики интереса",
+        "Система сравнивает изменения интереса за последовательные четырёхнедельные периоды, учитывая объём данных. Это помогает отличать устойчивые тенденции от случайных всплесков."
       ],
       [
-        "Прозрачный рейтинг",
-        "Отдельно учитываются свежесть, интерес и независимые источники. Повторный сигнал одной площадки не считается вторым подтверждением; словарный сюжет без актуальных оснований получает нулевой приоритет."
+        "Прозрачная система оценки",
+        "Рейтинг формируется из нескольких показателей: актуальности, динамики интереса и независимых подтверждений. Повторяющиеся сигналы не учитываются как отдельные доказательства."
       ],
       [
-        "Переход от анализа к производству",
-        "Локальная языковая обработка выделяет темы, а визуальные правила формируют контекст. CSV Theme,Context совместим с All_Stock_GPT; партии сохраняются неизменно и учитываются при следующей выгрузке."
+        "Интеграция с генерацией изображений",
+        "Локальная языковая обработка выделяет темы, а набор визуальных правил формирует контекст. Экспорт в формате CSV (Theme, Context) совместим с All_Stock."
       ]
     ],
-    "resultTitle": "Обоснованная подборка вместо генерации наугад",
-    "result": "Исследование завершается конкретными темами и визуальными заданиями для производства контента. Можно отбирать сюжеты по имеющимся основаниям, проверять динамику и планировать подготовку изображений к событиям.\n\nЭкспорт связывает анализ с генератором: выбранная подборка переносится в CSV без ручного составления каждого задания. Само приложение исследует темы; генерация и результаты продаж находятся за пределами этого процесса.",
-    "dropsCaption": "Календарь и план: ближайшие события на выбранных рынках и сроки подготовки контента.",
+    "resultTitle": "От анализа данных к готовым идеям для генерации",
+    "result": "Разработано приложение, которое превращает разрозненные данные из открытых источников в структурированную подборку перспективных тем для стоковых изображений.\n\nДля каждой темы доступны рейтинг, обоснование выбора и готовый визуальный контекст. Можно отслеживать тенденции, учитывать предстоящие события и планировать создание контента заранее.\n\nЭкспорт в CSV позволяет передавать выбранные темы в генератор без ручной подготовки заданий. Само приложение отвечает за исследование и подбор тем; генерация изображений и оценка фактических продаж выполняются отдельно.",
+    "dropsCaption": "Календарь событий и планирование подготовки стокового контента.",
     "proofTitle": "Проверка работоспособности",
-    "proof": "33 автоматических теста проверяют обработку источников, расчёты, рейтинг, экспорт и обработку ошибок. Production-сборка интерфейса успешно выполнена.\n\nВ браузере проверены каталог, поиск, карточка темы, обзор, календарь и мобильное отображение. Формат CSV ранее проверен загрузчиком All_Stock_GPT без запуска генерации. На странице представлены реальные экраны работающего приложения.",
+    "proof": "Приложение проверено на реальных данных. Проведены 33 автоматических теста, охватывающих обработку источников, расчёты, рейтинг, экспорт и обработку ошибок.\n\nДополнительно вручную проверены основные функции, пользовательские сценарии и отображение на мобильных устройствах. Совместимость CSV проверена с загрузчиком All_Stock с запуском генерации изображений.\n\nНа странице представлены реальные экраны работающего приложения.",
     "stack": [
       [
         "Python · FastAPI · SQLite",
-        "Сборщики, серверная логика, история наблюдений и партии экспорта."
+        "Автоматизированный сбор и обработка данных, серверная логика, хранение результатов исследований и истории экспорта."
       ],
       [
-        "HTTPX · публичные данные",
-        "Получение материалов, встроенного JSON, поисковых показателей и временных рядов."
+        "HTTPX · Public Data",
+        "Получение информации из открытых источников, поисковых показателей и временных рядов."
       ],
       [
         "spaCy · WordNet",
-        "Извлечение конкретных сюжетов и локальная языковая обработка без внешней LLM."
+        "Локальная обработка текста, извлечение конкретных тем и сюжетов без использования внешних LLM."
       ],
       [
         "React · TypeScript · ECharts",
-        "Интерфейс исследования, фильтры, карточки и графики."
+        "Интерактивный интерфейс, поиск и фильтрация тем, визуализация аналитики и графиков."
       ]
     ],
     "back": "← Все работы",
@@ -83,74 +83,74 @@ const copy={
   "en": {
     "kicker": "STOCK INSIGHTS / STOCK CONTENT RESEARCH",
     "title": "Finding promising topics for stock images",
-    "intro": "Stock Insights helps select topics for generating images intended for sale on stock platforms. It gathers public interest signals, assesses topic relevance and shows the evidence behind each choice. Selected topics and visual briefs can be exported to an image generator.",
+    "intro": "Stock Insights finds promising topics before generating images for sale on stock platforms. It automatically gathers and analyzes open-source data, identifies current trends and suggests concrete topics with visual context. Prepared briefs can be exported for subsequent generation.",
     "status": "Working application · Checked with real data",
-    "taskTitle": "Choose topics before generating images",
-    "task": "Stock content production needs more than a list of ideas: it needs evidence of which subjects are relevant, where interest is growing and what to prepare for upcoming events. Checking multiple platforms manually takes time, while a single popular query does not reveal the full picture.\n\nThe task was to combine available signals, prioritize subjects and turn research into concrete generation briefs. The aim is to focus production on promising topics for stock sales.",
+    "taskTitle": "Determine which images to create for stock platforms",
+    "task": "Successful stock image sales depend on both generation quality and topic selection. It is important to understand which subjects are gaining popularity, what attracts attention now and which directions may become relevant in the near future.\n\nManually researching search trends, stock platforms, news and seasonal events takes substantial time.\n\nThe task was to automate data collection and analysis across sources, identify promising topics and turn research into concrete image-generation briefs.",
     "solutionTitle": "What the application does",
     "steps": [
       [
-        "Collects evidence",
-        "Combines public stock-platform materials, search and visual trends, news mentions and article views. Retains the source and date of each observation."
+        "Collects data from multiple sources",
+        "Analyzes public stock-platform data, search and visual trends, news and interest in publications. Considers seasonality, upcoming events and information freshness."
       ],
       [
-        "Extracts concrete subjects",
-        "Identifies objects and activities in collected materials. Produces short English topics for image production rather than broad content categories."
+        "Finds promising topics",
+        "Extracts concrete objects and subjects suitable for image creation. Produces short English topic names rather than broad directions."
       ],
       [
-        "Prioritizes topics",
-        "Considers freshness, interest trends, independent sources and visual signals. Topic cards reveal scoring components, charts and source materials."
+        "Assesses relevance and prioritizes",
+        "Compares interest trends, information freshness and independent supporting sources. Each topic receives a score whose supporting evidence can be inspected."
       ],
       [
         "Prepares generation briefs",
-        "Adds English visual context and exports selected topics or batches as CSV. Export history helps avoid repeating previously prepared briefs."
+        "Creates visual context for each topic: a description of what should be depicted and how. Selected topics and descriptions are exported as CSV for subsequent generation. Export history helps avoid repetition."
       ]
     ],
     "interactiveTitle": "Why a topic was shortlisted",
-    "interactive": "Selection draws on current mentions, changes in interest and independent supporting sources. Each topic card shows how signals contribute to its score and provides access to the underlying trends.\n\nThe score prioritizes further research; it is not a probability of sale. Public interest and stock search-result counts remain separate from buyer demand.",
-    "heroCaption": "Generation topics: concrete subjects, research priority and evidence from collected materials; Russian interface.",
-    "explorerCaption": "Solar panel topic card: visual brief, scoring components and public stock-search data; Russian interface.",
-    "filteredCaption": "Research overview: available signal trends and topics with supporting evidence; Russian interface.",
+    "interactive": "Each recommendation is supported by available data: current mentions, interest trends and evidence from multiple sources. Topic cards reveal scoring components, charts and source materials.\n\nThe rating expresses a topic’s priority for further work; it does not guarantee sales. Public interest and stock image counts are reference signals rather than direct measures of buyer demand.",
+    "heroCaption": "Generation topics: priority rating, visual context and evidence supporting selection; Russian interface.",
+    "explorerCaption": "Topic card: visual context, scoring components and source data; Russian interface.",
+    "filteredCaption": "Research overview: interest trends, current directions and evidence supporting selection; Russian interface.",
     "engineeringTitle": "Key engineering decisions",
     "engineering": [
       [
-        "Multiple sources in one system",
-        "Different formats are normalized into a common structure. Raw responses retain URLs, timestamps and checksums so conclusions can be traced back to evidence."
+        "Combining multiple sources",
+        "Data in different formats is normalized into a common structure. Links, dates and source materials are retained so analytical results can be verified."
       ],
       [
-        "Trends rather than isolated spikes",
-        "News attention is compared across complete four-week windows, accounting for sample size. Incomplete history or a small baseline is not presented as reliable growth."
+        "Analyzing interest trends",
+        "The system compares changes in interest across consecutive four-week periods, accounting for data volume. This helps distinguish sustained trends from isolated spikes."
       ],
       [
-        "Transparent prioritization",
-        "Freshness, interest and independent sources are scored separately. Duplicate platform signals do not count as independent confirmation; dictionary-only subjects without current evidence receive zero priority."
+        "Transparent scoring",
+        "The rating combines relevance, interest trends and independent confirmation. Repeated signals are not counted as separate evidence."
       ],
       [
-        "From research to production",
-        "Local language processing extracts topics, while visual rules provide context. Theme,Context CSV is compatible with All_Stock_GPT; immutable export batches inform subsequent selections."
+        "Integration with image generation",
+        "Local language processing extracts topics, while visual rules create context. CSV export in Theme, Context format is compatible with All_Stock."
       ]
     ],
-    "resultTitle": "Evidence-based selection instead of guessing",
-    "result": "Research produces concrete topics and visual briefs for content production. Users can select subjects based on available evidence, inspect trends and plan image preparation around upcoming events.\n\nCSV export connects research to the generator without manually writing every brief. The application researches topics; image generation and sales results are outside this workflow.",
-    "dropsCaption": "Calendar and plan: upcoming events across selected markets and content preparation dates; Russian interface.",
+    "resultTitle": "From data analysis to ready-to-use generation ideas",
+    "result": "The application turns scattered open-source data into a structured selection of promising topics for stock images.\n\nEach topic includes a rating, supporting evidence and a prepared visual brief. Users can track trends, consider upcoming events and plan content production in advance.\n\nCSV export transfers selected topics to the generator without manually preparing briefs. The application researches and selects topics; image generation and assessment of actual sales are handled separately.",
+    "dropsCaption": "Event calendar and planning for stock content preparation; Russian interface.",
     "proofTitle": "Functional verification",
-    "proof": "33 automated tests cover source processing, calculations, scoring, export and error handling. The production frontend build completed successfully.\n\nBrowser checks covered the catalog, search, topic card, overview, calendar and mobile display. CSV compatibility was previously checked with the All_Stock_GPT loader without generating images. The page shows actual screens of the running application.",
+    "proof": "The application has been checked with real data. 33 automated tests cover source processing, calculations, scoring, export and error handling.\n\nCore functionality, user workflows and mobile display were also tested manually. CSV compatibility was checked with the All_Stock loader, including image generation.\n\nThe page shows actual screens of the running application.",
     "stack": [
       [
         "Python · FastAPI · SQLite",
-        "Collectors, server logic, observation history and export batches."
+        "Automated data collection and processing, server logic, research results and export history."
       ],
       [
-        "HTTPX · public data",
-        "Retrieving materials, embedded JSON, search metrics and time series."
+        "HTTPX · Public Data",
+        "Retrieving open-source information, search metrics and time series."
       ],
       [
         "spaCy · WordNet",
-        "Concrete subject extraction and local language processing without an external LLM."
+        "Local text processing and extraction of concrete topics without external LLMs."
       ],
       [
         "React · TypeScript · ECharts",
-        "Research interface, filters, topic cards and charts."
+        "Interactive interface, topic search and filtering, analytical charts and visualization."
       ]
     ],
     "back": "← All projects",
