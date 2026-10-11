@@ -68,6 +68,40 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
+    "id": "skill-scope",
+    "category": "monitor",
+    "type": {
+      "ru": "Аналитика навыков и обучения",
+      "en": "Skills & curriculum analytics"
+    },
+    "title": {
+      "ru": "SkillScope — навыки рынка и аудит обучения",
+      "en": "SkillScope — market skills & curriculum audit"
+    },
+    "summary": {
+      "ru": "Сбор IT-вакансий, анализ навыков с цитатами и сопоставление с учебной программой. Пробелы, версии и фиксированный отчёт.",
+      "en": "IT job collection, skill analysis with supporting quotes and curriculum comparison. Gaps, versions and fixed reports."
+    },
+    "image": "work/skill-scope/assets/overview.png",
+    "alt": {
+      "ru": "Работающий SkillScope: обзор сохранённых вакансий и навыков",
+      "en": "Actual SkillScope overview of saved listings and skills; Russian interface"
+    },
+    "url": "work/skill-scope/",
+    "tags": {
+      "ru": [
+        "Реальные вакансии",
+        "Аудит программы",
+        "Отчёт"
+      ],
+      "en": [
+        "Real job listings",
+        "Curriculum audit",
+        "Reporting"
+      ]
+    }
+  },
+  {
     "id": "retail-intelligence",
     "category": "monitor",
     "type": {
