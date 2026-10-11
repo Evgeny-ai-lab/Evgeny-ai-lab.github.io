@@ -1,0 +1,4 @@
+/* Shared decorative background. Content geometry and case design are unchanged. */
+body{background:#fbfdf7;isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:url('assets/pastel-green-waves.png');background-position:center;background-size:100% 100%;background-repeat:no-repeat}
+@media print{body:before{display:none}}
