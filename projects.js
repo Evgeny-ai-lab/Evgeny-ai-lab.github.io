@@ -308,5 +308,39 @@ window.PORTFOLIO_PROJECTS=[
         "Automation"
       ]
     }
+  },
+  {
+    "id": "medflow",
+    "category": "process",
+    "type": {
+      "ru": "Автоматизация документов",
+      "en": "Document automation"
+    },
+    "title": {
+      "ru": "Medflow — подготовка направлений",
+      "en": "Medflow — referral preparation"
+    },
+    "summary": {
+      "ru": "Данные из PDF или формы, требования из справочника, готовые направления в PDF и Excel и личный архив.",
+      "en": "PDF or form input, reference requirements, completed PDF and Excel referrals and a personal archive."
+    },
+    "image": "work/medflow/assets/workspace.png",
+    "alt": {
+      "ru": "Форма подготовки направления. Все данные, названия и значения справочника вымышлены.",
+      "en": "Referral preparation form. All personal details, names and reference values are fictional; Russian interface."
+    },
+    "url": "work/medflow/",
+    "tags": {
+      "ru": [
+        "Документооборот",
+        "PDF и Excel",
+        "Скриптовая автоматизация"
+      ],
+      "en": [
+        "Document workflow",
+        "PDF and Excel",
+        "Script automation"
+      ]
+    }
   }
 ];
