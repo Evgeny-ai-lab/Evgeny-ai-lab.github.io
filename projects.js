@@ -1,38 +1,72 @@
 window.PORTFOLIO_PROJECTS=[
-{
-  "id": "auction-scout",
-  "category": "ai",
-  "type": {
-    "ru": "AI-агент для заказчика",
-    "en": "Client AI agent"
+  {
+    "id": "auction-scout",
+    "category": "ai",
+    "type": {
+      "ru": "AI-агент для заказчика",
+      "en": "Client AI agent"
+    },
+    "title": {
+      "ru": "Auction Scout — отбор аукционных авто и мотоциклов",
+      "en": "Auction Scout — AI vehicle screening"
+    },
+    "summary": {
+      "ru": "Агент собирает объявления, оценивает повреждения по фото и отбирает лоты по условиям заказчика. Правила можно корректировать.",
+      "en": "Collects listings, assesses visible damage and shortlists vehicles against client requirements. Selection rules can be refined."
+    },
+    "image": "work/auction-scout/assets/selection-retina.png",
+    "alt": {
+      "ru": "Реальная подборка Auction Scout",
+      "en": "Actual Auction Scout shortlist; Russian interface"
+    },
+    "url": "work/auction-scout/",
+    "tags": {
+      "ru": [
+        "Gemini",
+        "Анализ фото",
+        "Память предпочтений"
+      ],
+      "en": [
+        "Gemini",
+        "Photo analysis",
+        "Preference memory"
+      ]
+    }
   },
-  "title": {
-    "ru": "Auction Scout — отбор аукционных авто и мотоциклов",
-    "en": "Auction Scout — AI vehicle screening"
+  {
+    "id": "motorscope",
+    "category": "monitor",
+    "type": {
+      "ru": "Мониторинг и аналитика",
+      "en": "Monitoring & analytics"
+    },
+    "title": {
+      "ru": "MotorScope — мониторинг рынка авто и мото",
+      "en": "MotorScope — vehicle market monitoring"
+    },
+    "summary": {
+      "ru": "История цен, новые объявления и снижения стоимости на av.by. Интерактивная аналитика по выбранным моделям автомобилей и мотоциклов.",
+      "en": "av.by price history, new listings and price reductions. Interactive analytics for selected car and motorcycle models."
+    },
+    "image": "work/motorscope/assets/overview.png",
+    "alt": {
+      "ru": "Работающий MotorScope: цены и предложение Ford Bronco Sport",
+      "en": "Actual MotorScope overview of Ford Bronco Sport supply and prices; Russian interface"
+    },
+    "url": "work/motorscope/",
+    "tags": {
+      "ru": [
+        "Сбор данных",
+        "История цен",
+        "Интерактивные графики"
+      ],
+      "en": [
+        "Data collection",
+        "Price history",
+        "Interactive charts"
+      ]
+    }
   },
-  "summary": {
-    "ru": "Агент собирает объявления, оценивает повреждения по фото и отбирает лоты по условиям заказчика. Правила можно корректировать.",
-    "en": "Collects listings, assesses visible damage and shortlists vehicles against client requirements. Selection rules can be refined."
-  },
-  "image": "work/auction-scout/assets/selection-retina.png",
-  "alt": {
-    "ru": "Реальная подборка Auction Scout",
-    "en": "Actual Auction Scout shortlist; Russian interface"
-  },
-  "url": "work/auction-scout/",
-  "tags": {
-    "ru": [
-      "Gemini",
-      "Анализ фото",
-      "Память предпочтений"
-    ],
-    "en": [
-      "Gemini",
-      "Photo analysis",
-      "Preference memory"
-    ]
-  }
-},
   {
     "id": "qwen-kaggle",
     "category": "ai",
