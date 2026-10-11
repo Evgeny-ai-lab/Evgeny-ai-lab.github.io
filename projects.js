@@ -3,8 +3,8 @@ window.PORTFOLIO_PROJECTS=[
     "id": "auction-scout",
     "category": "ai",
     "type": {
-      "ru": "AI-агент для заказчика",
-      "en": "Client AI agent"
+      "ru": "Отбор аукционных лотов",
+      "en": "Auction lot screening"
     },
     "title": {
       "ru": "Auction Scout — отбор аукционных авто и мотоциклов",
@@ -37,8 +37,8 @@ window.PORTFOLIO_PROJECTS=[
     "id": "motorscope",
     "category": "monitor",
     "type": {
-      "ru": "Готовый проект для заказчика",
-      "en": "Completed client project"
+      "ru": "Аналитика авторынка",
+      "en": "Vehicle market analytics"
     },
     "title": {
       "ru": "MotorScope — мониторинг рынка авто и мото",
@@ -71,8 +71,8 @@ window.PORTFOLIO_PROJECTS=[
     "id": "qwen-kaggle",
     "category": "ai",
     "type": {
-      "ru": "Самостоятельный ИИ-сервис",
-      "en": "Self-hosted AI service"
+      "ru": "ИИ-чат и API",
+      "en": "AI chat & API"
     },
     "title": {
       "ru": "Свой ИИ-сервер на облачной видеокарте",
@@ -109,8 +109,8 @@ window.PORTFOLIO_PROJECTS=[
     "id": "cloud-gpu-upscale",
     "category": "content",
     "type": {
-      "ru": "Облачный ИИ-сервис",
-      "en": "Cloud AI service"
+      "ru": "ИИ-апскейл изображений",
+      "en": "AI image upscaling"
     },
     "title": {
       "ru": "Качественный ИИ-апскейл без мощного компьютера",
@@ -143,8 +143,8 @@ window.PORTFOLIO_PROJECTS=[
     "id": "image-file-cleanup",
     "category": "content",
     "type": {
-      "ru": "Практическая утилита",
-      "en": "Practical utility"
+      "ru": "Подготовка изображений",
+      "en": "Image preparation"
     },
     "title": {
       "ru": "Подготовка изображений после апскейла",
