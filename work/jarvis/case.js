@@ -3,7 +3,7 @@ const copy={
     "kicker": "JARVIS / МУЛЬТИМОДАЛЬНЫЙ ИИ-АССИСТЕНТ ДЛЯ MAC",
     "title": "Голосовой ИИ-ассистент, который не только отвечает, но и действует",
     "intro": "JARVIS — персональный ИИ-ассистент для macOS, объединяющий голосовое общение, управление компьютером, компьютерное зрение и автономных ИИ-агентов. Он может вести обычный диалог, работать с приложениями, искать информацию, анализировать документы, писать код и выполнять сложные задачи по голосовой или текстовой команде.\n\nГолосовое взаимодействие, системная автоматизация и выполнение агентных задач объединены в единую систему. Долговременная память, библиотека навыков и автоматизация позволяют использовать JARVIS не только как собеседника, но и как постоянного помощника в повседневной работе.",
-    "status": "Работающее приложение для macOS · 128 автоматических тестов",
+    "status": "Работающее приложение, в процессе развития · Проводится ручное тестирование",
     "heroCaption": "Главное окно JARVIS: голосовой и текстовый интерфейс, панель диалога, управление камерой и взаимодействием с компьютером.",
     "taskLabel": "01 / ЗАДАЧА",
     "taskTitle": "Управлять компьютером и решать задачи обычным разговором",
@@ -105,93 +105,49 @@ const copy={
     "result": "Разработано настольное приложение для macOS, объединяющее возможности разговорного ИИ, компьютерного зрения, системной автоматизации и специализированных агентов в одном интерфейсе.\n\nJARVIS позволяет не только получать ответы, но и переходить от обычного голосового запроса к выполнению действий на компьютере: работе с приложениями, обработке информации, исследованию задач, созданию файлов и программного кода.\n\nРеализованы долговременная память, сохранение навыков, планировщик, голосовая диктовка и параллельное выполнение агентных заданий. Приложение можно использовать в основном окне или в виде компактной плавающей капсулы.",
     "capsuleCaption": "Компактная капсула JARVIS: состояние ассистента, время голосовой сессии и быстрые элементы управления поверх других окон.",
     "proofTitle": "Проверка работоспособности",
-    "proof": "Для проверки основных компонентов проекта реализован набор из 128 автоматизированных тестов. Проверяются голосовые состояния, механизмы управления задачами, резервные подключения, сохранение навыков и памяти, работа планировщика, диктовка, браузерная автоматизация и элементы интерфейса.\n\nДополнительно проводилось ручное тестирование приложения: проверялись отдельные пользовательские сценарии, работа интерфейса, создание и выполнение навыков, сохранение заметок, напоминания и переключение между режимами отображения.\n\nПредставленные скриншоты получены из работающего приложения с демонстрационными данными. Они показывают интерфейс и отдельные проверенные сценарии, но не заменяют полноценное интеграционное тестирование всех функций с внешними ИИ-сервисами.",
+    "proof": "JARVIS — действующий прототип с реализованной и работающей функциональностью. Приложение уже используется для практических задач, при этом разработка продолжается: отдельные возможности дорабатываются, а комплексная проверка всех сценариев работы ещё не завершена.\n\nДля проверки основных компонентов реализовано 128 автоматизированных тестов. Они охватывают голосовое взаимодействие, управление агентами, резервные подключения, память, библиотеку навыков, планировщик, диктовку, браузерную автоматизацию и элементы интерфейса.\n\nДополнительно проводилось ручное тестирование: проверялась работа приложения в реальных пользовательских сценариях, взаимодействие с macOS, выполнение команд и корректность работы отдельных функций. По результатам проверок продолжаются исправление выявленных ошибок и дальнейшее совершенствование системы.",
     "stackLabel": "06 / ТЕХНОЛОГИИ",
     "stackTitle": "Технологии и их назначение",
     "stack": [
       [
-        "Electron 41",
-        "Основа настольного приложения для macOS: главное окно, компактная капсула, интерфейс, системная интеграция и управление жизненным циклом приложения."
-      ],
-      [
-        "Node.js 22",
-        "Серверная логика внутри настольного приложения: брокер агентных заданий, фоновые процессы, управление состоянием, локальные данные и взаимодействие с системными инструментами."
+        "Electron · Node.js",
+        "Основа настольного приложения для macOS: пользовательский интерфейс, управление окнами, фоновые процессы, выполнение агентных заданий и взаимодействие между компонентами системы."
       ],
       [
         "JavaScript · HTML · CSS",
-        "Реализация интерфейса, пользовательских сценариев, управления вкладками, интерактивных элементов и визуальных состояний."
+        "Разработка интерфейса, пользовательских сценариев, интерактивных элементов, анимаций и визуальных состояний ассистента."
       ],
       [
-        "SVG · Canvas",
-        "Анимация центрального индикатора JARVIS, визуализация состояний голосового интерфейса и графические элементы приложения."
-      ],
-      [
-        "Google Gemini Live API",
-        "Двустороннее голосовое взаимодействие в реальном времени, обработка и воспроизведение речи, поддержка перебивания ассистента во время ответа."
-      ],
-      [
-        "Gemini Flash-Lite",
-        "Проверка голосовой команды активации после обнаружения речи в режиме ожидания."
-      ],
-      [
-        "Google Antigravity",
-        "Подключённая агентная платформа для выполнения сложных заданий. Используется через установленную на компьютере среду для работы с программным кодом, файлами, терминалом и другими инструментами."
-      ],
-      [
-        "WebSocket · PCM Audio",
-        "Двусторонняя потоковая передача аудиоданных и поддержка голосовых сессий с низкой задержкой."
-      ],
-      [
-        "Web Audio API · VAD",
-        "Обработка звука, определение речевой активности, управление микрофоном и механизм голосового пробуждения."
+        "Web Audio API · WebSocket · VAD",
+        "Двустороннее голосовое взаимодействие в реальном времени, потоковая передача аудио, обнаружение речевой активности и голосовая активация ассистента."
       ],
       [
         "Swift · C++ · Node-API",
-        "Нативные компоненты для взаимодействия Node.js с системными возможностями macOS."
+        "Нативные компоненты для интеграции приложения с системными возможностями macOS и обеспечения взаимодействия между Node.js и операционной системой."
       ],
       [
-        "macOS Accessibility API",
-        "Получение структуры интерфейсов приложений, обнаружение элементов и выполнение действий с кнопками, окнами и текстовыми полями."
-      ],
-      [
-        "AppleScript · Bash",
-        "Системная автоматизация, запуск команд и создание повторно используемых сценариев управления компьютером."
-      ],
-      [
-        "Quartz · CGEvent",
-        "Эмуляция событий клавиатуры и мыши, сочетаний клавиш, нажатий и других действий в macOS."
+        "macOS Accessibility API · AppleScript · Quartz",
+        "Автоматизация управления компьютером: взаимодействие с окнами и элементами интерфейса, управление приложениями, эмуляция действий мыши и клавиатуры."
       ],
       [
         "ScreenCaptureKit",
-        "Захват экрана и окон приложений для визуального анализа."
-      ],
-      [
-        "Electron WebContentsView",
-        "Встроенный браузер с отдельным профилем и средствами взаимодействия с веб-страницами."
+        "Захват экрана и окон приложений, получение визуального контекста и передача изображений для анализа."
       ],
       [
         "Obsidian · Markdown · YAML",
-        "Долговременная память, заметки, библиотека навыков, структура знаний, карточки проектов и сохранение контекста специализированных агентов."
-      ],
-      [
-        "JSON",
-        "Локальное хранение конфигурации, настроек и состояния отдельных подсистем приложения."
+        "Организация долговременной памяти, хранение знаний, навыков и информации о проектах с поддержкой тегов и связей между заметками."
       ],
       [
         "Cron · Task Scheduler",
-        "Планирование напоминаний, периодических задач и автоматического выполнения фоновых сценариев."
+        "Планирование напоминаний, повторяющихся операций и автоматического выполнения агентных задач по расписанию."
       ],
       [
         "Electron IPC · Context Isolation",
-        "Защищённый обмен сообщениями между интерфейсом и основным процессом приложения, разграничение доступа к системным функциям."
+        "Безопасный обмен данными между интерфейсом и основным процессом приложения, разграничение доступа к системным функциям."
       ],
       [
-        "macOS TCC · Codesigning · Entitlements",
-        "Управление системными разрешениями и корректная сборка и подпись приложения вместе с нативными библиотеками и вспомогательными процессами."
-      ],
-      [
-        "Node.js Test Runner (node)",
-        "Автоматизированное тестирование основной логики приложения, агентных процессов, памяти, автоматизации, голосовых состояний и системных механизмов."
+        "macOS Codesigning · TCC",
+        "Подпись приложения и нативных компонентов, управление системными разрешениями на микрофон, камеру, захват экрана и автоматизацию macOS."
       ]
     ],
     "back": "← Все работы",
@@ -199,14 +155,13 @@ const copy={
     "memoryCaption": "Память и Obsidian. Хранение заметок, знаний о проектах и навыков. Поддерживаются поиск, теги, связи между записями и индивидуальная память агентов.",
     "scheduleCaption": "Напоминания и расписание. Создание разовых напоминаний и фоновых сценариев, управление расписанием и отслеживание активных заданий.",
     "dictationCaption": "Диктовка в приложения. Подготовка и вставка текста в выбранное приложение macOS. Доступны настройки отправки, буфер обмена и история диктовки.",
-    "toolsCaption": "Инструменты управления Mac. Настройка доступа к браузеру, камере, экрану и системным функциям macOS. Пользователь отдельно управляет разрешениями на взаимодействие с компьютером.",
     "taskCaption": "Выполнение задачи на компьютере. Постановка задачи через JARVIS, выполнение действий ИИ-агентом и получение готового результата на компьютере. Демонстрация реального сценария — от пользовательской команды до созданного или изменённого файла."
   },
   "en": {
     "kicker": "JARVIS / MULTIMODAL AI ASSISTANT FOR MAC",
     "title": "A voice AI assistant that does more than answer — it acts",
     "intro": "JARVIS is a personal AI assistant for macOS, combining voice conversation, computer control, computer vision and autonomous AI agents. It can hold a conversation, work with applications, search for information, analyse documents, write code and carry out complex tasks in response to voice or text commands.\n\nVoice interaction, system automation and agent task execution are brought together in one system. Long-term memory, a skill library and automation make JARVIS a continuing assistant for everyday work as well as a conversational partner.",
-    "status": "Working macOS application · 128 automated tests",
+    "status": "Working application under active development · Manual testing in progress",
     "heroCaption": "JARVIS main window: voice and text interface, conversation panel, camera controls and interaction with the computer.",
     "taskLabel": "01 / THE TASK",
     "taskTitle": "Control a computer and solve tasks through ordinary conversation",
@@ -308,93 +263,49 @@ const copy={
     "result": "A macOS desktop application has been developed that combines conversational AI, computer vision, system automation and specialist agents in one interface.\n\nJARVIS makes it possible to move from an ordinary voice request to actions on the computer: working with applications, processing information, researching tasks, creating files and writing code.\n\nLong-term memory, saved skills, scheduling, voice dictation and parallel agent tasks are implemented. The application can be used in its main window or as a compact floating capsule.",
     "capsuleCaption": "JARVIS compact capsule: assistant status, voice session duration and quick controls above other windows.",
     "proofTitle": "Functional verification",
-    "proof": "A suite of 128 automated tests has been implemented to check the core project components. It covers voice states, task management, fallback connections, skill and memory storage, scheduling, dictation, browser automation and interface elements.\n\nAdditional manual testing covered individual user scenarios, the interface, creating and executing skills, saving notes, reminders and switching between display modes.\n\nThe screenshots were captured from the running application with demonstration data. They show the interface and selected verified scenarios, but do not replace full integration testing of every feature with external AI services.",
+    "proof": "JARVIS is a functioning prototype with implemented, working features. The application is already used for practical tasks, while development continues: individual capabilities are being refined, and comprehensive verification of every workflow has not yet been completed.\n\nA suite of 128 automated tests has been implemented to check the core components. It covers voice interaction, agent management, fallback connections, memory, the skill library, scheduling, dictation, browser automation and interface elements.\n\nAdditional manual testing covered real user workflows, interaction with macOS, command execution and individual features. Findings continue to inform bug fixes and further improvements to the system.",
     "stackLabel": "06 / TECHNOLOGIES",
     "stackTitle": "Technologies and their purpose",
     "stack": [
       [
-        "Electron 41",
-        "The foundation of the macOS desktop application: main window, compact capsule, interface, system integration and application lifecycle."
-      ],
-      [
-        "Node.js 22",
-        "Backend logic inside the desktop application: agent task broker, background processes, state management, local data and interaction with system tools."
+        "Electron · Node.js",
+        "The foundation of the macOS desktop application: user interface, window management, background processes, agent task execution and communication between system components."
       ],
       [
         "JavaScript · HTML · CSS",
-        "Implementation of the interface, user workflows, tabs, interactive elements and visual states."
+        "Implementation of the interface, user workflows, interactive elements, animations and visual assistant states."
       ],
       [
-        "SVG · Canvas",
-        "Animation of the central JARVIS indicator, voice-interface states and application graphics."
-      ],
-      [
-        "Google Gemini Live API",
-        "Two-way voice interaction in real time, speech processing and playback, and interrupting the assistant during a response."
-      ],
-      [
-        "Gemini Flash-Lite",
-        "Verification of the spoken activation command after speech is detected in standby mode."
-      ],
-      [
-        "Google Antigravity",
-        "A connected agent platform for complex assignments. Used through a locally installed environment to work with code, files, the terminal and other tools."
-      ],
-      [
-        "WebSocket · PCM Audio",
-        "Two-way streaming audio transmission and low-latency voice sessions."
-      ],
-      [
-        "Web Audio API · VAD",
-        "Audio processing, voice activity detection, microphone control and voice activation."
+        "Web Audio API · WebSocket · VAD",
+        "Two-way voice interaction in real time, streaming audio, voice activity detection and voice activation of the assistant."
       ],
       [
         "Swift · C++ · Node-API",
-        "Native components connecting Node.js to macOS system capabilities."
+        "Native components integrating the application with macOS system capabilities and connecting Node.js to the operating system."
       ],
       [
-        "macOS Accessibility API",
-        "Retrieving application interface structures, finding elements and interacting with buttons, windows and text fields."
-      ],
-      [
-        "AppleScript · Bash",
-        "System automation, command execution and reusable computer-control workflows."
-      ],
-      [
-        "Quartz · CGEvent",
-        "Generating keyboard and mouse events, shortcuts, clicks and other macOS actions."
+        "macOS Accessibility API · AppleScript · Quartz",
+        "Computer-control automation: working with windows and interface elements, controlling applications and generating mouse and keyboard events."
       ],
       [
         "ScreenCaptureKit",
-        "Capturing screens and application windows for visual analysis."
-      ],
-      [
-        "Electron WebContentsView",
-        "A built-in browser with a separate profile and web-page interaction tools."
+        "Capturing the screen and application windows, obtaining visual context and submitting images for analysis."
       ],
       [
         "Obsidian · Markdown · YAML",
-        "Long-term memory, notes, skill library, knowledge organisation, project cards and specialist agent context."
-      ],
-      [
-        "JSON",
-        "Local storage of configuration, settings and individual subsystem states."
+        "Organising long-term memory, storing knowledge, skills and project information with tags and links between notes."
       ],
       [
         "Cron · Task Scheduler",
-        "Scheduling reminders, recurring tasks and automatic background workflows."
+        "Scheduling reminders, recurring operations and automatic agent tasks."
       ],
       [
         "Electron IPC · Context Isolation",
-        "Protected communication between the interface and main process, with separated access to system functions."
+        "Secure data exchange between the interface and main process, with separated access to system functions."
       ],
       [
-        "macOS TCC · Codesigning · Entitlements",
-        "System permissions and correct packaging and signing of the application, native libraries and helper processes."
-      ],
-      [
-        "Node.js Test Runner (node)",
-        "Automated testing of core application logic, agent processes, memory, automation, voice states and system mechanisms."
+        "macOS Codesigning · TCC",
+        "Signing the application and native components, and managing system permissions for the microphone, camera, screen capture and macOS automation."
       ]
     ],
     "back": "← All projects",
@@ -402,7 +313,6 @@ const copy={
     "memoryCaption": "Memory and Obsidian. Storing notes, project knowledge and skills. Search, tags, links between entries and individual agent memory are supported.",
     "scheduleCaption": "Reminders and scheduling. Creating one-time reminders and background workflows, managing schedules and tracking active tasks.",
     "dictationCaption": "Dictation into applications. Preparing and inserting text into a selected macOS application. Send settings, clipboard and dictation history are available.",
-    "toolsCaption": "Mac control tools. Configuring access to the browser, camera, screen and macOS system features. Users manage computer interaction permissions separately.",
     "taskCaption": "Task execution on the computer. Assigning a task through JARVIS, execution by an AI agent and receiving the finished result on the computer. A real workflow from the user command to a created or modified file."
   }
 };
