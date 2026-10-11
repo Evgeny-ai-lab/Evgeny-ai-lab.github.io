@@ -75,8 +75,8 @@ const copy={
     "taskLabel": "01 / ЗАДАЧА",
     "solutionLabel": "02 / РЕШЕНИЕ",
     "engineeringLabel": "03 / ИНЖЕНЕРИЯ",
-    "resultLabel": "04 / РЕЗУЛЬТАТ",
-    "stackLabel": "05 / ТЕХНОЛОГИИ",
+    "resultLabel": "05 / РЕЗУЛЬТАТ",
+    "stackLabel": "06 / ТЕХНОЛОГИИ",
     "stackTitle": "Технологии и их назначение",
     "adminTitle": "Управление пользователями и доступом",
     "admin": "Приложение поддерживает многопользовательскую работу с разграничением прав доступа. Администратор создаёт приглашения, назначает роли и управляет учётными записями. Предусмотрены три роли: пользователь, редактор и администратор.\n\nОбычный пользователь работает с направлениями и собственным архивом. Редактор дополнительно может обновлять справочник, а администратор управляет пользователями и доступом.\n\nПроверка прав выполняется на сервере. Пароли хранятся в виде защищённых хэшей, операции изменения данных защищены CSRF-токенами, а при удалении учётной записи активные сеансы аннулируются.",
@@ -97,7 +97,8 @@ const copy={
         "Адаптация справочников и шаблонов",
         "Логику приложения можно настроить под другие формы документов, структуру справочников и правила заполнения. При обновлении нормативных требований или внутренних регламентов предусмотрена возможность адаптации используемых Excel-справочников и шаблонов документов. В зависимости от характера изменений может потребоваться и корректировка программной логики."
       ]
-    ]
+    ],
+    "adaptLabel": "04 / АДАПТАЦИЯ"
   },
   "en": {
     "kicker": "MEDFLOW / DOCUMENT PREPARATION AUTOMATION",
@@ -175,8 +176,8 @@ const copy={
     "taskLabel": "01 / THE TASK",
     "solutionLabel": "02 / THE SOLUTION",
     "engineeringLabel": "03 / ENGINEERING",
-    "resultLabel": "04 / THE RESULT",
-    "stackLabel": "05 / TECHNOLOGIES",
+    "resultLabel": "05 / THE RESULT",
+    "stackLabel": "06 / TECHNOLOGIES",
     "stackTitle": "Technologies and their purpose",
     "adminTitle": "User and access management",
     "admin": "The application supports multiple users with distinct access permissions. Administrators create invitations, assign roles and manage accounts. Three roles are available: user, editor and administrator.\n\nUsers work with referrals and their own archives. Editors can also update the reference workbook, while administrators manage users and access.\n\nPermissions are checked on the server. Passwords are stored as secure hashes, data-changing operations require CSRF tokens, and deleting an account invalidates its active sessions.",
@@ -197,7 +198,8 @@ const copy={
         "Application logic can be configured for other document forms, reference structures and completion rules. Excel reference workbooks and document templates can be adapted when regulations or internal procedures change. Depending on the changes, program logic may also need to be updated."
       ]
     ],
-    "adaptOutro": "Medflow is therefore not limited to the server configuration shown here. It can be used as a standalone tool, developed into a corporate service or integrated into existing information systems. The implementation depends on the organization’s tasks and technical requirements."
+    "adaptOutro": "Medflow is therefore not limited to the server configuration shown here. It can be used as a standalone tool, developed into a corporate service or integrated into existing information systems. The implementation depends on the organization’s tasks and technical requirements.",
+    "adaptLabel": "04 / ADAPTATION"
   }
 };
 let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ru';
