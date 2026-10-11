@@ -1,3 +1,2 @@
-/* Shared heading scale for case pages; body text is unchanged. */
+/* Reduced project title size; section headings keep their original scale. */
 .scout-main h1{font-size:clamp(30px,4vw,54px)}
-.case-section h2{font-size:clamp(24px,2.6vw,34px)}
