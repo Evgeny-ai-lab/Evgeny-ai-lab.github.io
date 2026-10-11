@@ -240,5 +240,39 @@ window.PORTFOLIO_PROJECTS=[
         "16-bit PNG"
       ]
     }
+  },
+  {
+    "id": "stock-insights",
+    "category": "data",
+    "type": {
+      "ru": "Исследование тем для стоков",
+      "en": "Stock content research"
+    },
+    "title": {
+      "ru": "Stock Insights — темы для стоковых изображений",
+      "en": "Stock Insights — stock image topic research"
+    },
+    "summary": {
+      "ru": "Собирает сигналы интереса, объясняет приоритет тем и готовит визуальные задания для генератора в CSV.",
+      "en": "Collects interest signals, explains topic priorities and exports visual briefs for an image generator."
+    },
+    "image": "work/stock-insights/assets/topics.png",
+    "alt": {
+      "ru": "Темы для генерации: конкретные сюжеты, приоритет исследования и основания из собранных материалов.",
+      "en": "Generation topics: concrete subjects, research priority and evidence from collected materials; Russian interface."
+    },
+    "url": "work/stock-insights/",
+    "tags": {
+      "ru": [
+        "Сбор данных",
+        "Анализ трендов",
+        "CSV для генератора"
+      ],
+      "en": [
+        "Data collection",
+        "Trend research",
+        "Generator CSV"
+      ]
+    }
   }
 ];
