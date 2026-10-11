@@ -124,10 +124,9 @@ const badge=document.createElement('span');badge.className='project-badge';badge
 const content=document.createElement('div');content.className='project-card-content';
 const title=document.createElement('h3');title.textContent=p.title[lang];
 const summary=document.createElement('p');summary.textContent=p.summary[lang];
-const tags=document.createElement('div');tags.className='project-tags';for(const t of p.tags?.[lang]||[]){const tag=document.createElement('span');tag.textContent=t;tags.append(tag);}
 const bottom=document.createElement('div');bottom.className='project-bottom';
 const arrow=document.createElement('span');arrow.className='project-open';arrow.setAttribute('aria-hidden','true');arrow.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>';
-bottom.append(tags,arrow);content.append(title,summary,bottom);card.append(content);$('project-list').append(card);
+bottom.append(arrow);content.append(title,summary,bottom);card.append(content);$('project-list').append(card);
 }
 $('empty-state').hidden=projects.length>0;
 const c=categories.find(c=>c.id===filter);
