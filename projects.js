@@ -1,5 +1,39 @@
 window.PORTFOLIO_PROJECTS=[
   {
+    "id": "jarvis",
+    "category": "ai",
+    "type": {
+      "ru": "Голосовой ИИ-ассистент",
+      "en": "Voice AI assistant"
+    },
+    "title": {
+      "ru": "JARVIS — ассистент для Mac",
+      "en": "JARVIS — assistant for Mac"
+    },
+    "summary": {
+      "ru": "Голосовой диалог, специализированные агенты, управление приложениями, память и повторяемые сценарии в одном пространстве.",
+      "en": "Voice conversation, specialist agents, application control, memory and reusable workflows in one workspace."
+    },
+    "image": "work/jarvis/assets/overview.png",
+    "alt": {
+      "ru": "Главное окно JARVIS: голосовой интерфейс, диалог и работа с проектом. Отдельный демонстрационный запуск без личной истории.",
+      "en": "JARVIS main window: voice interface, conversation and project context. Separate demonstration instance without personal history."
+    },
+    "url": "work/jarvis/",
+    "tags": {
+      "ru": [
+        "ИИ-агенты",
+        "macOS",
+        "Мультимодальность"
+      ],
+      "en": [
+        "AI agents",
+        "macOS",
+        "Multimodal AI"
+      ]
+    }
+  },
+  {
     "id": "auction-scout",
     "category": "ai",
     "type": {
