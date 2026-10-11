@@ -37,13 +37,17 @@ const projects=(window.PORTFOLIO_PROJECTS||[]).filter(p=>filter==='all'||p.categ
 $('project-list').replaceChildren();
 for(const p of projects){
 const card=document.createElement('a');card.className='project-card';card.href=p.url+'?lang='+lang;
-if(p.image){const im=document.createElement('img');im.src=p.images?.[lang]||p.image;im.alt=p.alt?.[lang]||p.title[lang];im.loading='lazy';card.append(im);}
+const preview=document.createElement('div');preview.className='project-preview';
+if(p.image){const im=document.createElement('img');im.src=p.images?.[lang]||p.image;im.alt=p.alt?.[lang]||p.title[lang];im.loading='lazy';preview.append(im);}
+if(['auction-scout','qwen-kaggle'].includes(p.id))preview.classList.add('interface-preview');
+const badge=document.createElement('span');badge.className='project-badge';badge.textContent=p.type[lang];preview.append(badge);card.append(preview);
 const content=document.createElement('div');content.className='project-card-content';
-const type=document.createElement('span');type.className='meta';type.textContent=p.type[lang];
 const title=document.createElement('h3');title.textContent=p.title[lang];
 const summary=document.createElement('p');summary.textContent=p.summary[lang];
 const tags=document.createElement('div');tags.className='project-tags';for(const t of p.tags?.[lang]||[]){const tag=document.createElement('span');tag.textContent=t;tags.append(tag);}
-content.append(type,title,summary,tags);card.append(content);$('project-list').append(card);
+const bottom=document.createElement('div');bottom.className='project-bottom';
+const arrow=document.createElement('span');arrow.className='project-open';arrow.setAttribute('aria-hidden','true');arrow.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>';
+bottom.append(tags,arrow);content.append(title,summary,bottom);card.append(content);$('project-list').append(card);
 }
 $('empty-state').hidden=projects.length>0;
 const c=categories.find(c=>c.id===filter);
