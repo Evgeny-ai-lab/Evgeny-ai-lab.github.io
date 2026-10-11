@@ -1,83 +1,57 @@
 const copy={
   "ru": {
     "kicker": "ALL STOCK / АВТОМАТИЗАЦИЯ ПРОИЗВОДСТВА СТОКОВОГО КОНТЕНТА",
-    "title": "От темы до 4K-изображений и метаданных для стоков",
-    "intro": "All Stock объединяет подготовку промптов, генерацию изображений и оформление метаданных в одном приложении. Пользователь задаёт темы и выбирает режим работы; система создаёт задания и метаданные с учётом форматов стоков, генерирует изображения через API и сохраняет результат вместе с CSV для загрузки.",
+    "title": "Автоматизированная генерация контента для фотостоков",
+    "intro": "All Stock — приложение для автоматизированного создания изображений с целью их продажи на фотостоках. Система преобразует исходные темы и идеи в готовые промпты, генерирует изображения через API в высоком разрешении и подготавливает названия, описания и ключевые слова с учётом требований разных площадок.\n\nВ одном приложении объединены три последовательных этапа: генерация промптов и метаданных, создание изображений и техническая очистка файлов. Каждый этап имеет собственную вкладку и при необходимости может использоваться самостоятельно.",
     "status": "Работающее приложение · Реальные результаты генерации",
-    "taskTitle": "Объединить разрозненные этапы производства",
-    "task": "Подготовка изображений для фотостоков состоит из нескольких задач: придумать сюжеты, написать промпты, получить изображения, составить названия и ключевые слова, привести файлы к нужным именам и сформировать таблицы для разных площадок. При работе с большими подборками ручные переходы между инструментами замедляют процесс и приводят к несоответствию файлов и метаданных.\n\nЗадача — собрать эти этапы в управляемый процесс, сохранив выбор моделей, режимов и форматов. При этом генератор изображений и очистка файлов должны работать и отдельно, с материалами из других инструментов.",
-    "solutionTitle": "Что делает приложение",
-    "steps": [
-      [
-        "Принимает темы и контекст",
-        "Темы можно ввести вручную, загрузить из TXT или CSV либо подготовить в Stock Insights. Вместе с темой можно передать контекст, который уточняет будущий сюжет."
-      ],
-      [
-        "Создаёт промпты и метаданные",
-        "Выбранная LLM формирует задания и данные для стоков. Режим определяет один кадр или несколько разных сюжетов; настройки задают пропорции изображений, расширения файлов в CSV и распределение по папкам."
-      ],
-      [
-        "Автоматически генерирует изображения",
-        "После подготовки промптов сервер запускает выбранную модель изображений через API с запросом 4K. Сохраняются PNG-мастера и JPEG-файлы; технические метаданные очищаются с сохранением цветового профиля."
-      ],
-      [
-        "Формирует файлы для площадок",
-        "Из сохранённых результатов готовятся отдельные CSV для Adobe Stock, 123RF, Dreamstime и Vecteezy, а также форматы MicrostockPlus. Имена изображений связываются с соответствующими строками метаданных."
-      ]
-    ],
-    "interactiveTitle": "Полный процесс и отдельные инструменты",
-    "interactive": "Основной сценарий запускает изображения после генерации промптов. Можно также загрузить CSV с готовыми промптами — написанными вручную или полученными в другой программе — и использовать только генератор изображений.\n\nОчистка доступна отдельной вкладкой для внешних файлов: удаляет технические EXIF/XMP/IPTC и суффиксы апскейлеров в названиях, сохраняя ICC-профиль. Сам апскейлер в этот процесс не входит.",
-    "heroCaption": "Генератор промптов: режим, LLM, формат CSV, организация папок и сохранённая рабочая сессия.",
-    "explorerCaption": "Генератор изображений: выбор модели, отдельный импорт CSV и статус сохранённой сессии — 100/100 изображений.",
-    "filteredCaption": "Отдельная очистка метаданных: обработка внешних изображений и переименование файлов с сохранением ICC-профиля.",
+    "taskTitle": "Автоматизировать производство изображений для фотостоков",
+    "task": "Создание больших партий изображений для продажи на фотостоках требует не только генерации самих картинок. Необходимо подготовить качественные промпты, составить метаданные, учесть требования каждой площадки, правильно организовать файлы и подготовить их к загрузке.\n\nПри ручной работе эти операции отнимают значительное время, особенно когда речь идёт о десятках и сотнях изображений.\n\nЗадача — объединить все этапы в единую систему, способную автоматизировать массовое создание стокового контента, сохранив гибкость настроек и возможность управлять каждым этапом отдельно.",
+    "solutionTitle": "Полный цикл генерации в одном приложении",
+    "interactiveTitle": "Единый процесс с возможностью раздельной работы",
+    "interactive": "Приложение состоит из трёх встроенных модулей: генератора промптов, генератора изображений и инструмента очистки метаданных. В интерфейсе каждый расположен на отдельной вкладке.\n\nМодули рассчитаны на последовательную работу, но могут использоваться независимо. Например, можно загрузить собственный CSV с готовыми промптами и сразу приступить к генерации изображений либо обработать изображения, созданные в других программах.\n\nВстроенный модуль очистки удаляет лишние EXIF, XMP и IPTC, сохраняя необходимый цветовой профиль ICC. Также предусмотрено удаление служебных суффиксов из имён файлов.",
+    "heroCaption": "Скриншот: генератор промптов с настройками моделей, форматов экспорта и сохранённой рабочей сессией.",
+    "explorerCaption": "Скриншот: генератор изображений с выбором модели, импортом CSV и завершённой сессией на 100 изображений.",
+    "filteredCaption": "Скриншот: встроенный модуль очистки метаданных и подготовки файлов.",
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
-        "Согласование всех этапов",
-        "Темы, промпты, метаданные и имена файлов связаны внутри сессии. Автоматический переход к изображениям и последующий экспорт снимают необходимость переносить данные между этапами вручную."
+        "Гибкая система API и моделей",
+        "Подключения и модели можно добавлять, изменять и удалять через отдельную вкладку настроек. Приложение не привязано к одному поставщику и позволяет выбирать подходящие сервисы для генерации текстов и изображений."
       ],
       [
-        "Раздельные модели и режимы",
-        "Текстовая LLM и модель изображений выбираются независимо. Настраиваемые инструкции управляют подготовкой одного кадра, серии или нескольких разных идей под одну тему."
+        "Метаданные под требования фотостоков",
+        "Для разных площадок формируются CSV с необходимой структурой и количеством ключевых слов. Названия, описания и ключевые слова подготавливаются автоматически вместе с промптами."
       ],
       [
-        "Устойчивость к ошибкам API",
-        "Временные ошибки обрабатываются повторными попытками с паузами. Неудачные изображения откладываются на второй проход; критическая ошибка квоты останавливает работу вместо бесконечного повторения запросов."
-      ],
-      [
-        "Метаданные под разные форматы",
-        "Для площадок предусмотрены отдельные схемы CSV, категории и обработка ключевых слов. Экспорт сопоставляется с существующими изображениями, чтобы таблицы соответствовали подготовленным файлам."
-      ],
-      [
-        "Сессии и серверное выполнение",
-        "Профили сохраняют параметры и рабочие папки, сессии — промпты и результаты. Задача выполняется на сервере: вкладку браузера можно закрыть, пока сам сервер продолжает работать."
-      ],
-      [
-        "Подготовка файлов без потери цвета",
-        "PNG-мастер и JPEG сохраняются отдельно. ExifTool удаляет технические поля с исключением ICC-профиля; самостоятельная очистка учитывает переименование и коллизии имён."
+        "Модульная организация процесса",
+        "Генерация промптов, создание изображений и очистка метаданных объединены в последовательный рабочий процесс, но доступны и по отдельности. Импорт готовых заданий, гибкие настройки и сохранение рабочих сессий позволяют эффективно обрабатывать большие партии изображений."
       ]
     ],
-    "resultTitle": "Из списка тем — подготовленная партия контента",
-    "result": "All Stock связывает творческую подготовку и техническое оформление в один процесс: от темы и контекста до изображений, названий, ключевых слов и отдельных CSV для площадок. Для работы с готовыми промптами или внешними изображениями можно запускать только нужный этап.\n\nВ проверенной сохранённой сессии находятся 100 PNG-мастеров. Показанные примеры имеют размер 5504 × 3072 пикселя. Вместе с изображениями сохранены CSV для разных стоков; ниже — реальные результаты и фрагмент экспорта Adobe Stock.",
-    "dropsCaption": "Четыре изображения из сохранённой сессии и строки реального Adobe Stock CSV. Это подборка файлов результата, а не экран приложения.",
+    "resultTitle": "От списка тем до готовой партии стокового контента",
+    "result": "Создано полноценно работающее приложение, автоматизирующее подготовку промптов, генерацию изображений, создание метаданных и техническую обработку файлов.\n\nВ одной из сохранённых рабочих сессий успешно сгенерировано 100 PNG-изображений. Представленные примеры имеют разрешение 5504 × 3072 пикселя. Для изображений также сформированы метаданные и отдельные CSV-файлы под требования фотостоков.\n\nНа странице представлены реальные результаты генерации и фрагмент подготовленного CSV для Adobe Stock.",
+    "dropsCaption": "Скриншот: реальные изображения из сохранённой сессии и соответствующие строки CSV для Adobe Stock.",
     "proofTitle": "Проверка работоспособности",
-    "proof": "Повторно пройден 21 автоматический тест: работа с ключами и ошибками API, сценарии генерации, подготовка промптов и обработка ключевых слов.\n\nВ браузере проверены выбор профиля и сессии, настройки генерации, отдельный импорт CSV и экран очистки. Наличие результатов сверено с файлами сохранённой сессии; новая платная генерация для подготовки кейса не запускалась.\n\nНа странице представлены реальные экраны и ранее полученные изображения. Экспорт под формат площадки не означает автоматическую публикацию или принятие изображений модерацией.",
+    "proof": "Работа приложения подтверждена 21 автоматическим тестом, охватывающим ключевые сценарии генерации, работу с API, подготовку промптов и обработку ключевых слов.\n\nДополнительно проведены неоднократные ручные проверки всех основных модулей, настроек и полного процесса создания изображений. Работоспособность подтверждена реальными сессиями генерации и сохранёнными результатами.",
     "stack": [
       [
-        "Python · FastAPI",
-        "Сервер приложения, выполнение задач и управление сессиями."
+        "API языковых моделей",
+        "генерация промптов, названий, описаний и ключевых слов."
       ],
       [
-        "LLM · API моделей изображений",
-        "Подготовка промптов и метаданных, прямая генерация изображений с запросом 4K."
+        "API генерации изображений",
+        "автоматическое создание изображений в высоком разрешении."
       ],
       [
-        "Pillow · ExifTool",
-        "Сохранение PNG/JPEG, техническая очистка и работа с цветовыми профилями."
+        "CSV",
+        "пакетная обработка заданий и экспорт метаданных для разных фотостоков."
       ],
       [
-        "CSV · JavaScript",
-        "Импорт заданий, экспорт для площадок и интерфейс управления."
+        "ExifTool, EXIF, XMP, IPTC, ICC",
+        "очистка технических метаданных, обработка имён файлов и сохранение цветовых профилей."
+      ],
+      [
+        "Автоматизированное тестирование",
+        "проверка основных сценариев работы приложения."
       ]
     ],
     "back": "← Все работы",
@@ -86,87 +60,62 @@ const copy={
     "engineeringLabel": "03 / ИНЖЕНЕРИЯ",
     "resultLabel": "04 / РЕЗУЛЬТАТ",
     "stackLabel": "05 / ТЕХНОЛОГИИ",
-    "stackTitle": "Технологии и их назначение"
+    "stackTitle": "Технологии и их назначение",
+    "solution": "Работа начинается с исходных тем: их можно вводить вручную, загружать готовыми списками или дополнять визуальным контекстом для более точной генерации. Темы также могут поступать из отдельного приложения [Stock Insights](https://evgeny-meleshkevich.github.io/work/stock-insights/?lang=ru), предназначенного для исследования рынка и поиска перспективных направлений.\n\nНа основе полученных заданий языковая модель через API создаёт промпты и одновременно формирует названия, описания и ключевые слова с учётом требований выбранных фотостоков.\n\nЗатем генератор изображений обрабатывает подготовленные промпты через API и создаёт изображения в высоком разрешении. Завершающий этап — очистка лишних технических метаданных, подготовка имён файлов и формирование готового комплекта изображений и CSV для последующей загрузки на площадки."
   },
   "en": {
     "kicker": "ALL STOCK / STOCK CONTENT PRODUCTION AUTOMATION",
-    "title": "From topics to 4K images and stock metadata",
-    "intro": "All Stock combines prompt preparation, image generation and metadata formatting in one application. Users provide topics and select a workflow; the system creates briefs and stock metadata, generates images through APIs and saves results alongside upload CSV files.",
+    "title": "Automated content generation for stock platforms",
+    "intro": "All Stock automates image creation for sale on stock platforms. It turns topics and ideas into prompts, generates high-resolution images through APIs and prepares titles, descriptions and keywords for different platforms.\n\nThe application combines three sequential stages: prompt and metadata generation, image creation and technical file cleanup. Each stage has its own tab and can also be used independently.",
     "status": "Working application · Real generation results",
-    "taskTitle": "Connect separate production stages",
-    "task": "Preparing stock images involves choosing subjects, writing prompts, generating images, creating titles and keywords, naming files and building platform-specific spreadsheets. For larger batches, switching tools manually slows production and causes mismatches between images and metadata.\n\nThe task was to bring these stages into a manageable workflow while preserving model, mode and format choices. Image generation and file cleanup also needed to work independently with material from other tools.",
-    "solutionTitle": "What the application does",
-    "steps": [
-      [
-        "Accepts topics and context",
-        "Topics can be entered manually, imported from TXT or CSV, or prepared in Stock Insights. Optional context helps define the intended subject."
-      ],
-      [
-        "Creates prompts and metadata",
-        "The selected LLM prepares briefs and stock metadata. Modes support a single image or multiple subjects; settings control aspect ratios, CSV filename extensions and folder organization."
-      ],
-      [
-        "Generates images automatically",
-        "After prompts are prepared, the server calls the selected image model with a 4K request. PNG masters and JPEG files are saved; technical metadata is cleared while preserving the color profile."
-      ],
-      [
-        "Prepares platform files",
-        "Saved results are exported to separate CSV files for Adobe Stock, 123RF, Dreamstime and Vecteezy, plus MicrostockPlus formats. Image filenames are matched to their metadata rows."
-      ]
-    ],
-    "interactiveTitle": "A full workflow and standalone tools",
-    "interactive": "The main workflow launches image generation after prompt preparation. Users can also import ready-made prompts from a CSV file, whether written manually or produced in another program, and use only the image generator.\n\nA separate cleanup tab handles external images: it removes technical EXIF/XMP/IPTC fields and upscaler filename suffixes while preserving ICC profiles. Upscaling itself is outside this workflow.",
-    "heroCaption": "Prompt generator: workflow mode, LLM, CSV format, folder organization and a saved session; Russian interface.",
-    "explorerCaption": "Image generator: model choice, standalone CSV import and a saved session showing 100/100 images; Russian interface.",
-    "filteredCaption": "Standalone metadata cleanup: external image processing and renaming while preserving ICC profiles; Russian interface.",
+    "taskTitle": "Automate image production for stock platforms",
+    "task": "Producing large batches of stock images involves more than generating pictures. It requires effective prompts, metadata, platform-specific formatting, file organization and preparation for upload.\n\nManual work takes substantial time, especially for dozens or hundreds of images.\n\nThe task was to combine these stages into one system for automated batch production, while preserving flexible settings and independent control over each stage.",
+    "solutionTitle": "A complete generation workflow in one application",
+    "interactiveTitle": "A connected workflow with independent modules",
+    "interactive": "The application includes three modules: a prompt generator, an image generator and a metadata cleanup tool. Each occupies a separate interface tab.\n\nModules support a sequential workflow and independent use. Users can import a CSV of their own prompts and proceed directly to image generation, or process images created in other programs.\n\nThe cleanup module removes unnecessary EXIF, XMP and IPTC fields while preserving ICC color profiles. It also removes technical filename suffixes.",
+    "heroCaption": "Screenshot: prompt generator with model settings, export formats and a saved session; Russian interface.",
+    "explorerCaption": "Screenshot: image generator with model selection, CSV import and a completed 100-image session; Russian interface.",
+    "filteredCaption": "Screenshot: integrated metadata cleanup and file preparation module; Russian interface.",
     "engineeringTitle": "Key engineering decisions",
     "engineering": [
       [
-        "Coordinating production stages",
-        "Topics, prompts, metadata and filenames remain linked within a session. Automatic image generation and subsequent export eliminate manual transfer between stages."
+        "Flexible API and model configuration",
+        "Connections and models can be added, edited and removed through a dedicated settings tab. The application is not tied to a single provider and supports selecting services for text and image generation."
       ],
       [
-        "Separate models and modes",
-        "Text and image models are selected independently. Configurable instructions guide single-image, series and multiple-idea workflows."
+        "Metadata for stock platforms",
+        "Platform-specific CSV files use the required structure and keyword counts. Titles, descriptions and keywords are prepared automatically alongside prompts."
       ],
       [
-        "Handling API failures",
-        "Temporary errors trigger delayed retries. Failed images are deferred to a second pass; critical quota errors stop processing rather than retrying indefinitely."
-      ],
-      [
-        "Platform-specific metadata",
-        "Platforms have separate CSV schemas, categories and keyword processing. Exports are matched against existing images so spreadsheets correspond to prepared files."
-      ],
-      [
-        "Sessions and server-side execution",
-        "Profiles retain settings and working folders; sessions retain prompts and results. Tasks run on the server, allowing the browser tab to close while the server remains running."
-      ],
-      [
-        "File preparation with color preservation",
-        "PNG masters and JPEGs are stored separately. ExifTool clears technical fields except ICC profiles; standalone cleanup handles renaming and filename collisions."
+        "A modular production workflow",
+        "Prompt generation, image creation and metadata cleanup form a sequential workflow and remain independently accessible. Imported briefs, flexible settings and saved sessions support large image batches."
       ]
     ],
-    "resultTitle": "From a topic list to a prepared content batch",
-    "result": "All Stock connects creative preparation with technical packaging: topics and context become images, titles, keywords and platform-specific CSV files. Ready-made prompts and external images can be processed through individual stages.\n\nThe inspected saved session contains 100 PNG masters. The displayed examples are 5504 × 3072 pixels. Platform CSV files are stored alongside the images; below are actual results and an Adobe Stock export excerpt.",
-    "dropsCaption": "Four images from a saved session and rows from an actual Adobe Stock CSV export. This is a presentation of output files, not an application screen.",
+    "resultTitle": "From a topic list to a prepared stock content batch",
+    "result": "A working application automates prompt preparation, image generation, metadata creation and technical file processing.\n\nOne saved production session contains 100 successfully generated PNG images. The examples shown are 5504 × 3072 pixels. Metadata and separate platform-specific CSV files were also prepared.\n\nThe page shows actual generated images and an excerpt from the Adobe Stock CSV export.",
+    "dropsCaption": "Actual images from a saved session and corresponding Adobe Stock CSV rows.",
     "proofTitle": "Functional verification",
-    "proof": "All 21 automated tests passed again, covering API keys and errors, generation workflows, prompt preparation and keyword handling.\n\nBrowser checks covered profile and session selection, generation settings, the standalone CSV import interface and the cleanup screen. Saved session files were inspected; no new paid generation was run for this case.\n\nThe page shows actual screens and previously generated images. Platform-format export does not imply automatic publication or moderation acceptance.",
+    "proof": "Application behavior is supported by 21 automated tests covering key generation workflows, API handling, prompt preparation and keyword processing.\n\nRepeated manual checks covered the main modules, settings and complete image production workflow. Working generation sessions and saved results provide further evidence.",
     "stack": [
       [
-        "Python · FastAPI",
-        "Application server, task execution and session management."
+        "Language model APIs",
+        "Generation of prompts, titles, descriptions and keywords."
       ],
       [
-        "LLM · image model APIs",
-        "Prompt and metadata preparation, direct image generation with a 4K request."
+        "Image generation APIs",
+        "Automated creation of high-resolution images."
       ],
       [
-        "Pillow · ExifTool",
-        "PNG/JPEG saving, technical cleanup and color-profile handling."
+        "CSV",
+        "Batch brief processing and platform-specific metadata export."
       ],
       [
-        "CSV · JavaScript",
-        "Brief import, platform exports and workflow controls."
+        "ExifTool, EXIF, XMP, IPTC, ICC",
+        "Technical metadata cleanup, filename handling and color-profile preservation."
+      ],
+      [
+        "Automated testing",
+        "Verification of core application workflows."
       ]
     ],
     "back": "← All projects",
@@ -175,9 +124,10 @@ const copy={
     "engineeringLabel": "03 / ENGINEERING",
     "resultLabel": "04 / THE RESULT",
     "stackLabel": "05 / TECHNOLOGIES",
-    "stackTitle": "Technologies and their purpose"
+    "stackTitle": "Technologies and their purpose",
+    "solution": "The workflow starts with topics, entered manually, imported as lists or supplemented with visual context. Topics can also come from [Stock Insights](https://evgeny-meleshkevich.github.io/work/stock-insights/?lang=en), a separate application for research and finding promising content directions.\n\nA language model accessed through an API creates prompts together with titles, descriptions and keywords formatted for the selected stock platforms.\n\nThe image generator then processes the prompts through an API and creates high-resolution images. The final stage clears unnecessary technical metadata, prepares filenames and assembles images and CSV files for subsequent upload."
   }
 };
 let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ru';
-function apply(){const t=copy[lang];document.documentElement.lang=lang;document.title=t.title+' — Evgeny Meleshkevich';document.querySelector('meta[name="description"]').content=t.intro;document.querySelectorAll('[data-t]').forEach(e=>{if(t[e.dataset.t].includes('\n\n')){e.replaceChildren(...t[e.dataset.t].split('\n\n').map(text=>{const p=document.createElement('p');p.textContent=text;return p}))}else e.textContent=t[e.dataset.t]});document.querySelectorAll('[data-alt]').forEach(e=>e.alt=t[e.dataset.alt]);document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));document.querySelectorAll('.back,[data-home]').forEach(a=>a.href='../../?lang='+lang+'#work');for(const [id,key]of [['pipeline','steps'],['engineering-grid','engineering'],['stack-grid','stack']]){document.getElementById(id).replaceChildren(...t[key].map((row,i)=>{const el=document.createElement('article');if(key==='steps'){const n=document.createElement('small');n.textContent='0'+(i+1);el.append(n)}const h=document.createElement('h3');h.textContent=row[0];const p=document.createElement('p');p.textContent=row[1];el.append(h,p);return el}));}}
+function apply(){const t=copy[lang];document.documentElement.lang=lang;document.title=t.title+' — Evgeny Meleshkevich';document.querySelector('meta[name="description"]').content=t.intro;document.querySelectorAll('[data-t]').forEach(e=>{if(t[e.dataset.t].includes('\n\n')){e.replaceChildren(...t[e.dataset.t].split('\n\n').map(text=>{const p=document.createElement('p');p.textContent=text;return p}))}else e.textContent=t[e.dataset.t]});document.querySelectorAll('[data-t=solution] p').forEach(p=>{const m=p.textContent.match(/\[Stock Insights\]\((https:\/\/evgeny-meleshkevich\.github\.io\/work\/stock-insights\/\?lang=(?:ru|en))\)/);if(m){const text=p.textContent;const a=document.createElement('a');a.textContent='Stock Insights';a.href=m[1];p.replaceChildren(document.createTextNode(text.slice(0,m.index)),a,document.createTextNode(text.slice(m.index+m[0].length)))}});document.querySelectorAll('[data-alt]').forEach(e=>e.alt=t[e.dataset.alt]);document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));document.querySelectorAll('.back,[data-home]').forEach(a=>a.href='../../?lang='+lang+'#work');for(const [id,key]of [['engineering-grid','engineering'],['stack-grid','stack']]){document.getElementById(id).replaceChildren(...t[key].map((row,i)=>{const el=document.createElement('article');if(key==='steps'){const n=document.createElement('small');n.textContent='0'+(i+1);el.append(n)}const h=document.createElement('h3');h.textContent=row[0];const p=document.createElement('p');p.textContent=row[1];el.append(h,p);return el}));}}
 document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;const u=new URL(location);u.searchParams.set('lang',lang);history.replaceState({},'',u);apply()});apply();
