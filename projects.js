@@ -75,12 +75,12 @@ window.PORTFOLIO_PROJECTS=[
       "en": "AI chat & API"
     },
     "title": {
-      "ru": "Свой ИИ-сервер на облачной видеокарте",
-      "en": "Your own AI server on a cloud GPU"
+      "ru": "Qwen — языковая модель на облачной видеокарте",
+      "en": "Qwen — a language model on cloud GPUs"
     },
     "summary": {
-      "ru": "Qwen на Kaggle: свой чат RU/EN, настройки генерации и API с потоковыми ответами. Реальное выполнение на Tesla T4.",
-      "en": "Qwen on Kaggle: a RU/EN chat, generation controls and a streaming API. Actual Tesla T4 inference."
+      "ru": "Собственная среда для Qwen: веб-чат, системные инструкции и потоковый API. Вычисления выполняются на сервере Kaggle.",
+      "en": "A self-managed Qwen environment with web chat, system instructions and a streaming API. Computation runs on Kaggle."
     },
     "image": "work/qwen-kaggle/assets/chat-ru.png",
     "images": {
