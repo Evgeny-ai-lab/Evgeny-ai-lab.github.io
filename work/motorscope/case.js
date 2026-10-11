@@ -27,9 +27,9 @@ const copy={
       ]
     ],
     "interactiveTitle": "Сравнение рыночных сегментов",
-    "interactive": "Выбор года, пробега, города и ценового диапазона пересчитывает статистику и историю наблюдений. Это позволяет исследовать отдельный сегмент: сравнить его цены, сроки предложения, частоту появления объявлений и снижения стоимости с общей группой.",
+    "interactive": "Графики служат инструментами анализа: нажатие на год, город, ценовой диапазон или срок с публикации задаёт выборку и пересчитывает её показатели. Несколько условий можно применять вместе, чтобы сравнивать цены, сроки предложения и движение объявлений в конкретном сегменте с общей группой.",
     "explorerCaption": "Сравнение предложения по годам и городам. Выбор на графиках задаёт сегмент для дальнейшего анализа.",
-    "filteredCaption": "Пример сегмента: Ford Bronco Sport 2021–2023 годов в Минске. Для него пересчитаны количество предложений, медианная цена и история; сохранённые объявления доступны для изучения.",
+    "filteredCaption": "Распределение цен и возраст предложения. Нажатие на столбец цены или диапазон дней пересчитывает статистику; можно выбрать несколько диапазонов одновременно.",
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
@@ -38,7 +38,7 @@ const copy={
       ],
       [
         "Быстрый сбор с браузерным резервом",
-        "Изучены запросы, которыми сама площадка получает выдачу. Для поддерживаемых фильтров используется структурированный JSON; при неизвестных параметрах или сбое подключается Playwright. В сравнительном прогоне сбор 26 мотоциклов сократился с 47,6 до 4,4 секунды; замер не включает загрузку фотографий."
+        "Найден и реализован способ получать структурированные данные av.by напрямую, без загрузки страниц в браузере. Приложение использует запросы самой площадки и проверяет полноту полученной выдачи. Playwright сохранён как резерв для неподдерживаемых параметров и сбоев прямого сбора. Проверки на реальных поисках подтвердили соответствие объявлений и их характеристик данным площадки."
       ],
       [
         "Защита истории от неполных проверок",
@@ -60,8 +60,8 @@ const copy={
     "resultTitle": "Данные для оценки рынка и планирования закупок",
     "result": "Заказчик получил инструмент для сравнения интересующих моделей и рыночных сегментов: по ценам, срокам предложения, интенсивности появления и ухода объявлений, частоте снижения стоимости. Накопленная история помогает оценивать оборачиваемость и выбирать направления для дальнейших закупок. Сбор данных, расчёты и сохранение объявлений выполняются автоматически — вместо постоянных проверок площадки и ручного ведения аналитики.",
     "dropsCaption": "Динамика медианной цены и объёма предложения выбранной модели. Каждый срез пополняет историю рынка.",
-    "historyCaption": "Сравнение текущих и снятых объявлений по пробегу, году и цене. Цвет выделяет год выпуска, бронзовые точки — объявления, ушедшие из выдачи.",
-    "proof": "104 автоматических теста проверяют серверную логику: сбор и обработку данных, фильтрацию, историю наблюдений, цены и обработку ошибок. Дополнительно проверены 30 браузерных сценариев. Проводилось ручное тестирование функциональности и пользовательских сценариев. Заказчик также протестировал приложение на реальных объявлениях и проверил работу мониторинга и аналитики. На странице представлены реальные экраны работающего приложения.",
+    "historyCaption": "Пробег и его связь с годом и ценой. Столбцы слева задают диапазоны для анализа; точки справа открывают отдельные объявления. Текущие и снятые предложения можно сравнивать на одном графике.",
+    "proof": "104 автоматических теста проверяют серверную логику: сбор и обработку данных, фильтрацию, историю наблюдений, цены и обработку ошибок. Дополнительно проверены 30 браузерных сценариев.\n\nПроводилось ручное тестирование функциональности и пользовательских сценариев. Заказчик также протестировал приложение на реальных объявлениях и проверил работу мониторинга и аналитики.\n\nНа странице представлены реальные экраны работающего приложения.",
     "stack": [
       [
         "Python · FastAPI",
@@ -117,9 +117,9 @@ const copy={
       ]
     ],
     "interactiveTitle": "Compare market segments",
-    "interactive": "Selecting years, mileage, location and price ranges recalculates statistics and observation history. Users can analyse a particular segment and compare its prices, time on the market, new listings and price reductions with the full group.",
+    "interactive": "Charts act as analysis controls: clicking a year, location, price range or listing-age band defines a selection and recalculates its metrics. Criteria can be combined to compare prices, time on the market and listing activity within a segment against the full group.",
     "explorerCaption": "Supply compared by year and location. Chart selections define a segment for further analysis.",
-    "filteredCaption": "Example segment: Ford Bronco Sport from 2021–2023 in Minsk. Listing counts, median price and history are recalculated, with recorded listings available for inspection.",
+    "filteredCaption": "Price distribution and listing age. Clicking a price column or day range recalculates statistics; multiple ranges can be selected together.",
     "engineeringTitle": "Key engineering decisions",
     "engineering": [
       [
@@ -128,7 +128,7 @@ const copy={
       ],
       [
         "Fast collection with a browser fallback",
-        "The requests used by the source website were investigated. Supported filters use structured JSON; unknown parameters or a failure trigger Playwright. In a comparison run, collection of 26 motorcycles fell from 47.6 to 4.4 seconds; photo downloads were excluded."
+        "A direct method for retrieving structured av.by data was identified and implemented, without loading pages in a browser. The application uses the source website’s own requests and checks the completeness of the results. Playwright remains a fallback for unsupported parameters and failed direct collection. Checks on real searches confirmed that listings and specifications matched the source data."
       ],
       [
         "Protect history from incomplete checks",
@@ -150,8 +150,8 @@ const copy={
     "resultTitle": "Data for market assessment and purchasing plans",
     "result": "The client received a tool for comparing selected models and market segments by prices, time on the market, listing arrivals and departures, and frequency of price reductions. Accumulated history supports an assessment of market turnover and future purchasing priorities. Data collection, calculations and listing archiving run automatically, replacing repeated source checks and manual analysis.",
     "dropsCaption": "Median asking price and supply over time for the selected model. Each collection adds a new market observation.",
-    "historyCaption": "Current and removed listings compared by mileage, year and asking price. Colour indicates production year; bronze points represent listings that left the search results.",
-    "proof": "104 automated tests cover server logic: collection and processing, filters, observation history, prices and error handling. Verification also covered 30 browser scenarios. Functionality and user workflows were tested manually. The client additionally tested the application against real listings and checked its monitoring and analytics. This page shows actual screens of the working application.",
+    "historyCaption": "Mileage and its relationship to year and price. Columns on the left select analysis ranges; points on the right open individual listings. Current and removed listings can be compared in the same chart.",
+    "proof": "104 automated tests cover server logic: collection and processing, filters, observation history, prices and error handling. Verification also covered 30 browser scenarios.\n\nFunctionality and user workflows were tested manually. The client additionally tested the application against real listings and checked its monitoring and analytics.\n\nThis page shows actual screens of the working application.",
     "stack": [
       [
         "Python · FastAPI",
@@ -181,5 +181,5 @@ const copy={
   }
 };
 let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ru';
-function apply(){const t=copy[lang];document.documentElement.lang=lang;document.title=t.title+' — Evgeny Meleshkevich';document.querySelector('meta[name="description"]').content=t.intro;document.querySelectorAll('[data-t]').forEach(e=>e.textContent=t[e.dataset.t]);document.querySelectorAll('[data-alt]').forEach(e=>e.alt=t[e.dataset.alt]);document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));document.querySelectorAll('.back,[data-home]').forEach(a=>a.href='../../?lang='+lang+'#work');for(const [id,key]of [['pipeline','steps'],['engineering-grid','engineering'],['stack-grid','stack']]){document.getElementById(id).replaceChildren(...t[key].map((row,i)=>{const el=document.createElement('article');if(key==='steps'){const n=document.createElement('small');n.textContent='0'+(i+1);el.append(n)}const h=document.createElement('h3');h.textContent=row[0];const p=document.createElement('p');p.textContent=row[1];el.append(h,p);return el}));}}
+function apply(){const t=copy[lang];document.documentElement.lang=lang;document.title=t.title+' — Evgeny Meleshkevich';document.querySelector('meta[name="description"]').content=t.intro;document.querySelectorAll('[data-t]').forEach(e=>{if(e.dataset.t==='proof'){e.replaceChildren(...t.proof.split('\n\n').map(text=>{const p=document.createElement('p');p.textContent=text;return p}))}else e.textContent=t[e.dataset.t]});document.querySelectorAll('[data-alt]').forEach(e=>e.alt=t[e.dataset.alt]);document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));document.querySelectorAll('.back,[data-home]').forEach(a=>a.href='../../?lang='+lang+'#work');for(const [id,key]of [['pipeline','steps'],['engineering-grid','engineering'],['stack-grid','stack']]){document.getElementById(id).replaceChildren(...t[key].map((row,i)=>{const el=document.createElement('article');if(key==='steps'){const n=document.createElement('small');n.textContent='0'+(i+1);el.append(n)}const h=document.createElement('h3');h.textContent=row[0];const p=document.createElement('p');p.textContent=row[1];el.append(h,p);return el}));}}
 document.querySelectorAll('[data-lang]').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;const u=new URL(location);u.searchParams.set('lang',lang);history.replaceState({},'',u);apply()});apply();
