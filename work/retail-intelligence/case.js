@@ -1,75 +1,75 @@
 const copy={
   "ru": {
     "kicker": "RETAIL INTELLIGENCE / АНАЛИТИКА РОЗНИЧНЫХ ПРОДАЖ",
-    "title": "Аналитика продаж и прогноз спроса",
-    "intro": "Retail Intelligence объединяет данные торговой сети в одном интерфейсе: показывает динамику продаж, различия между магазинами и сезонность товарных категорий. Модель машинного обучения прогнозирует спрос, а качество прогноза проверяется на исторических данных.",
+    "title": "Аналитика продаж и прогнозирование спроса",
+    "intro": "Retail Intelligence — приложение для анализа розничных продаж и прогнозирования спроса. Объединяет данные торговой сети, помогает отслеживать динамику продаж, сравнивать магазины и выявлять сезонные закономерности. Модель машинного обучения строит прогноз спроса, точность которого проверяется на реальных исторических данных.",
     "status": "Готовая демоверсия · Реальные исторические данные",
-    "taskTitle": "Понимать спрос и планировать продажи",
-    "task": "В большой торговой сети общие показатели скрывают различия между магазинами и товарными категориями. Для анализа требовалось объединить данные, выделить сезонные закономерности и сравнить динамику продаж в разных городах и магазинах.\n\nОтдельная задача — построить прогноз спроса и проверить, насколько он полезнее простых расчётов по прошлым продажам. Результаты должны быть доступны в понятном интерфейсе без ручной обработки многомиллионной таблицы.",
-    "solutionTitle": "Что делает приложение",
+    "taskTitle": "Понимать спрос и принимать решения на основе данных",
+    "task": "В крупной торговой сети общие показатели не всегда отражают реальную картину: продажи различаются между магазинами, регионами и товарными категориями. Задача заключалась в том, чтобы объединить исторические данные, выявить сезонные закономерности и сделать анализ продаж наглядным и доступным.\n\nДополнительная цель — разработать модель прогнозирования спроса и проверить её преимущество перед простыми методами расчёта. Всё это должно работать в удобном интерфейсе, без необходимости вручную обрабатывать миллионы записей.",
+    "solutionTitle": "Что умеет приложение",
     "steps": [
       [
-        "Объединяет данные сети",
-        "Обрабатывает более 3 млн записей по 54 магазинам и 33 товарным категориям. Проверяет пропуски и согласованность данных перед расчётами."
+        "Объединяет и обрабатывает данные",
+        "Работает с более чем 3 млн записей по 54 магазинам и 33 товарным категориям. Проверяет полноту и согласованность данных перед выполнением расчётов."
       ],
       [
-        "Показывает динамику продаж",
-        "Фильтры по периоду, региону, городу, магазину и категории помогают сравнивать объём продаж, изменения спроса и структуру предложения."
+        "Анализирует динамику продаж",
+        "Позволяет изучать продажи по периодам, регионам, городам, магазинам и товарным категориям. Интерактивные фильтры помогают сравнивать показатели и отслеживать изменения спроса."
       ],
       [
         "Выявляет закономерности",
-        "Сравнение магазинов и недельные профили категорий показывают различия в спросе и его связь с проведением акций."
+        "Показывает сезонные колебания, различия между магазинами и особенности спроса по дням недели. Помогает исследовать связь продаж с проведением рекламных акций."
       ],
       [
-        "Строит и проверяет прогноз",
-        "Модель рассчитывает спрос на 16 дней. Историческая проверка сопоставляет прогноз с фактическими продажами и двумя простыми базовыми моделями."
+        "Прогнозирует спрос",
+        "Модель машинного обучения рассчитывает спрос на 16 дней вперёд. Точность проверяется на исторических данных путём сравнения с фактическими продажами и двумя базовыми методами прогнозирования."
       ]
     ],
     "interactiveTitle": "От общей картины к отдельным категориям",
-    "interactive": "Фильтры пересчитывают показатели и графики для выбранной части сети. Можно сравнить магазины одного кластера, изучить спрос по дням недели и посмотреть динамику конкретной категории.",
-    "heroCaption": "Обзор сети: объём продаж, динамика спроса и структура категорий. Данные Favorita за 2013–2017 годы.",
-    "explorerCaption": "Сравнение магазинов: динамика продаж и показатели магазинов одного кластера.",
-    "filteredCaption": "Товарные категории: недельная сезонность и наблюдаемая связь продаж с акциями.",
+    "interactive": "Интерактивные фильтры позволяют переходить от показателей всей сети к отдельным магазинам и товарным категориям. Все графики и расчёты автоматически обновляются при изменении параметров, помогая детально исследовать динамику продаж и особенности спроса.",
+    "heroCaption": "Обзор торговой сети: динамика продаж, структура товарных категорий и ключевые показатели. Данные Favorita за 2013–2017 годы.",
+    "explorerCaption": "Сравнение магазинов: динамика продаж и ключевые показатели внутри одного кластера.",
+    "filteredCaption": "Анализ товарных категорий: недельная сезонность и наблюдаемая связь спроса с рекламными акциями.",
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
-        "Подготовка большого набора",
-        "Исходные CSV проверяются и преобразуются в локальную базу. Расчёты и интерфейс используют подготовленные данные без повторной загрузки всего набора."
+        "Обработка больших объёмов данных",
+        "Исходные CSV-файлы проходят проверку и преобразуются в локальную базу данных. Предварительная подготовка позволяет быстро выполнять аналитические расчёты без повторной загрузки миллионов записей."
       ],
       [
-        "Корректные бизнес-показатели",
-        "Объём продаж отделён от денежной выручки. Транзакции учитываются на уровне магазина, чтобы число чеков не умножалось при объединении категорий."
+        "Точность бизнес-показателей",
+        "Объём продаж учитывается отдельно от денежной выручки. Данные о транзакциях обрабатываются на уровне магазинов, что исключает дублирование чеков при объединении товарных категорий."
       ],
       [
-        "Проверка без подглядывания в будущее",
-        "Модель проверяется на последовательных временных окнах. Будущие продажи скрыты; выбор модели и итоговая оценка выполняются на разных периодах."
+        "Объективная проверка прогноза",
+        "Для оценки модели используются последовательные временные периоды без доступа к будущим продажам. Подбор модели и итоговая проверка выполняются на разных участках исторических данных."
       ],
       [
-        "Прогноз с понятной точкой сравнения",
-        "Регуляризованная регрессия Ridge учитывает календарь, тренд и план акций. Её результат сравнивается с прошлой неделей и сезонным средним."
+        "Прогнозирование с учётом ключевых факторов",
+        "Модель Ridge учитывает календарные особенности, тренды продаж и запланированные акции. Качество прогнозирования сравнивается с двумя базовыми подходами: предыдущей неделей и сезонным средним."
       ]
     ],
-    "resultTitle": "Проверенный прогноз и единая картина продаж",
-    "result": "Вместо разрозненных таблиц — приложение для анализа сети, магазинов и товарных категорий. Исторические данные, графики и результаты прогнозирования доступны в одном рабочем процессе.\n\nНа итоговом проверочном периоде ошибка Ridge по метрике RMSLE составила 0,467 против 0,531 у сезонного среднего — на 12,1% ниже. Это измеренный результат на выбранном историческом периоде.\n\nПодготовлен экспорт прогноза для 1 782 сочетаний «магазин × категория». Для просмотра аналитики и готового прогноза внешние API не требуются.",
-    "dropsCaption": "Прогноз спроса: сопоставление модели с фактическими продажами и базовым прогнозом на скрытом периоде.",
+    "resultTitle": "Единая аналитика продаж и проверенный прогноз спроса",
+    "result": "Разработано приложение, объединяющее анализ торговой сети, отдельных магазинов и товарных категорий. Вместо разрозненных таблиц — наглядные показатели, интерактивные графики и прогнозирование спроса в едином интерфейсе.\n\nНа итоговом проверочном периоде модель Ridge показала ошибку RMSLE 0,467 против 0,531 у сезонного среднего. Ошибка прогнозирования оказалась на 12,1% ниже — результат подтверждён на выделенном историческом периоде.\n\nРеализован экспорт прогнозов для 1 782 сочетаний «магазин × категория». Аналитика и готовые прогнозы доступны без подключения к внешним API.",
+    "dropsCaption": "Прогноз спроса: сравнение результатов модели с фактическими продажами и базовым прогнозом на проверочном периоде.",
     "proofTitle": "Проверка работоспособности",
-    "proof": "34 автоматических теста проверяют данные, расчёты, API, прогноз и обработку некорректного ввода. Дополнительно пройдены 14 браузерных сценариев: разделы аналитики, фильтры, скачивание, сброс и мобильный экран.\n\nНа странице представлены реальные экраны работающего приложения. Прогноз построен на исторических данных; подключение к кассам или ERP действующей сети в этот проект не входит.",
+    "proof": "Проведены 34 автоматических теста, охватывающих обработку данных, расчёты, API, прогнозирование и обработку ошибок. Дополнительно успешно пройдены 14 браузерных сценариев, включая работу фильтров, навигацию, экспорт данных и отображение на мобильных устройствах.\n\nНа странице представлены реальные экраны работающего приложения. Проект использует исторические данные и не предполагает подключения к действующим кассовым или ERP-системам.",
     "stack": [
       [
         "Python · pandas",
-        "Подготовка данных, контроль качества и аналитические расчёты."
+        "Обработка больших массивов данных, проверка их качества и аналитические расчёты."
       ],
       [
         "FastAPI · SQLite",
-        "Серверное API и хранение подготовленных данных."
+        "Серверная логика, API и хранение подготовленных данных."
       ],
       [
-        "Ridge · временная проверка",
-        "Прогнозирование спроса и оценка качества на отложенных периодах."
+        "Ridge Regression · Time Series Validation",
+        "Прогнозирование спроса и проверка точности модели на исторических периодах."
       ],
       [
         "JavaScript · SVG",
-        "Интерфейс, фильтры и графики."
+        "Интерактивный интерфейс, динамические фильтры и визуализация данных."
       ]
     ],
     "back": "← Все работы",
@@ -83,74 +83,74 @@ const copy={
   "en": {
     "kicker": "RETAIL INTELLIGENCE / RETAIL SALES ANALYTICS",
     "title": "Sales analytics and demand forecasting",
-    "intro": "Retail Intelligence brings retail-chain data into one interface: sales trends, differences between stores and seasonal patterns across product categories. A machine-learning model forecasts demand, with performance evaluated on historical data.",
+    "intro": "Retail Intelligence is an application for retail sales analysis and demand forecasting. It consolidates retail-chain data, tracks sales trends, compares stores and reveals seasonal patterns. A machine-learning model forecasts demand, with accuracy evaluated on real historical data.",
     "status": "Completed demo · Real historical data",
-    "taskTitle": "Understand demand and plan sales",
-    "task": "Network-wide totals can hide differences between stores and categories. The task was to consolidate data, identify seasonal patterns and compare sales trends across cities and stores.\n\nA separate goal was to build a demand forecast and measure its improvement over simple historical baselines. Results needed to be accessible without manually processing a multimillion-row spreadsheet.",
+    "taskTitle": "Understand demand and make data-informed decisions",
+    "task": "In a large retail chain, aggregate metrics do not always reveal the full picture: sales differ between stores, regions and product categories. The task was to consolidate historical data, identify seasonal patterns and make sales analysis clear and accessible.\n\nAn additional goal was to develop a demand forecasting model and evaluate its advantage over simple calculation methods. All of this needed to work in a convenient interface without manually processing millions of records.",
     "solutionTitle": "What the application does",
     "steps": [
       [
-        "Consolidates network data",
-        "Processes more than 3 million records across 54 stores and 33 product categories. Checks missing values and consistency before calculating metrics."
+        "Consolidates and processes data",
+        "Works with more than 3 million records across 54 stores and 33 product categories. Checks data completeness and consistency before performing calculations."
       ],
       [
-        "Explores sales trends",
-        "Period, region, city, store and category filters support analysis of sales volume, demand changes and category mix."
+        "Analyzes sales trends",
+        "Supports exploration by period, region, city, store and product category. Interactive filters help compare metrics and track changes in demand."
       ],
       [
         "Reveals patterns",
-        "Store comparisons and weekly category profiles show differences in demand and its association with promotions."
+        "Shows seasonal fluctuations, differences between stores and weekday demand patterns. Helps investigate the association between sales and promotional campaigns."
       ],
       [
-        "Builds and evaluates forecasts",
-        "The model predicts 16 days of demand. Historical evaluation compares predictions with actual sales and two simple baselines."
+        "Forecasts demand",
+        "The machine-learning model forecasts 16 days ahead. Accuracy is evaluated on historical data by comparison with actual sales and two baseline forecasting methods."
       ]
     ],
     "interactiveTitle": "From the network overview to individual categories",
-    "interactive": "Filters recalculate metrics and charts for a selected part of the network. Users can compare stores in the same cluster, examine weekday demand and explore a specific category.",
-    "heroCaption": "Network overview: sales volume, demand trends and category mix. Favorita data from 2013–2017; Russian interface.",
-    "explorerCaption": "Store comparison: sales trends and performance within a store cluster; Russian interface.",
-    "filteredCaption": "Product categories: weekly seasonality and observed association between sales and promotions; Russian interface.",
+    "interactive": "Interactive filters let users move from network-wide metrics to individual stores and product categories. Charts and calculations update when parameters change, supporting detailed exploration of sales trends and demand patterns.",
+    "heroCaption": "Retail-chain overview: sales trends, category mix and key metrics. Favorita data from 2013–2017; Russian interface.",
+    "explorerCaption": "Store comparison: sales trends and key metrics within a cluster; Russian interface.",
+    "filteredCaption": "Product category analysis: weekly seasonality and the observed association between demand and promotions; Russian interface.",
     "engineeringTitle": "Key engineering decisions",
     "engineering": [
       [
-        "Preparing a large dataset",
-        "Source CSV files are validated and converted into a local database. Analytics use prepared data without reloading the entire dataset."
+        "Processing large datasets",
+        "Source CSV files are validated and converted into a local database. Preparing data in advance enables fast analytical calculations without repeatedly loading millions of records."
       ],
       [
-        "Correct business metrics",
-        "Sales volume is kept separate from monetary revenue. Transactions remain at store level to avoid multiplying receipt counts when joining categories."
+        "Accurate business metrics",
+        "Sales volume is treated separately from monetary revenue. Transaction data is processed at store level to prevent duplicate receipt counts when joining product categories."
       ],
       [
-        "Evaluation without future leakage",
-        "Validation follows sequential time windows. Future sales are hidden, and model selection is separate from the final evaluation period."
+        "Objective forecast evaluation",
+        "The model is evaluated on sequential time periods without access to future sales. Model selection and final evaluation use different sections of historical data."
       ],
       [
-        "A meaningful forecasting baseline",
-        "Ridge regression incorporates calendar effects, trend and promotion schedules. Results are compared with the previous week and a seasonal average."
+        "Forecasting with key factors",
+        "Ridge incorporates calendar patterns, sales trends and scheduled promotions. Forecast quality is compared with two baselines: the previous week and a seasonal average."
       ]
     ],
-    "resultTitle": "An evaluated forecast and a unified view of sales",
-    "result": "The application replaces disconnected spreadsheets with a single workflow for network, store and category analysis. Historical data, charts and forecasts are accessible together.\n\nOn the final evaluation period, Ridge achieved an RMSLE of 0.467 versus 0.531 for the seasonal-average baseline: a 12.1% lower error on that historical window.\n\nForecast export covers 1,782 store–category combinations. Viewing the prepared analytics and forecasts does not require external APIs.",
-    "dropsCaption": "Demand forecasting: model predictions, actual sales and a baseline on a held-out period; Russian interface.",
+    "resultTitle": "Unified sales analytics and an evaluated demand forecast",
+    "result": "The application combines analysis of the retail chain, individual stores and product categories. Instead of disconnected spreadsheets, it offers clear metrics, interactive charts and demand forecasting in one interface.\n\nOn the final evaluation period, Ridge achieved an RMSLE of 0.467 versus 0.531 for the seasonal average. Forecasting error was 12.1% lower, as measured on the held-out historical period.\n\nForecast export covers 1,782 store–category combinations. Analytics and prepared forecasts are available without external APIs.",
+    "dropsCaption": "Demand forecasting: model results compared with actual sales and a baseline on the evaluation period; Russian interface.",
     "proofTitle": "Functional verification",
-    "proof": "34 automated tests cover data, calculations, API behavior, forecasting and invalid input. All 14 browser scenarios passed, including analytical sections, filters, downloads, reset and mobile layout.\n\nThe page shows actual screens of the running application. Forecasts use historical data; integration with a live retail chain’s point-of-sale or ERP system is outside this project.",
+    "proof": "34 automated tests cover data processing, calculations, API behavior, forecasting and error handling. An additional 14 browser scenarios passed, including filters, navigation, data export and mobile display.\n\nThe page shows actual screens of the running application. The project uses historical data and does not involve connections to live point-of-sale or ERP systems.",
     "stack": [
       [
         "Python · pandas",
-        "Data preparation, quality checks and analytical calculations."
+        "Large-scale data processing, quality checks and analytical calculations."
       ],
       [
         "FastAPI · SQLite",
-        "Server API and storage of prepared data."
+        "Server logic, API and storage of prepared data."
       ],
       [
-        "Ridge · temporal validation",
-        "Demand forecasting and evaluation on held-out periods."
+        "Ridge Regression · Time Series Validation",
+        "Demand forecasting and accuracy evaluation on historical periods."
       ],
       [
         "JavaScript · SVG",
-        "User interface, filters and charts."
+        "Interactive interface, dynamic filters and data visualization."
       ]
     ],
     "back": "← All projects",
