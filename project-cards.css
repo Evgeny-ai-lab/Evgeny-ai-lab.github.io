@@ -1,5 +1,5 @@
 /* Only project cards on the homepage. Hero and case styles remain untouched. */
-#project-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+#project-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 #project-list .project-card{padding:14px;background:#fff;border:1px solid #edf0e9;border-radius:20px;box-shadow:0 8px 30px rgba(20,45,30,.045);transition:transform .2s,box-shadow .2s;border-color:#edf0e9}
 .project-preview{position:relative;aspect-ratio:2.1/1;overflow:hidden;border-radius:14px;background:#f1f4f2;flex-shrink:0}
 #project-list .project-preview img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border:0;border-radius:0;transition:transform .2s}
