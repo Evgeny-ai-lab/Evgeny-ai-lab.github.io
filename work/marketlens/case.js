@@ -2,7 +2,7 @@ const copy={
   "ru": {
     "kicker": "MARKETLENS / АНАЛИТИКА РЫНКА ВАКАНСИЙ",
     "title": "Исследование рынка вакансий перед наймом",
-    "intro": "MarketLens помогает компании оценить рынок выбранной профессии перед поиском сотрудника: сколько предложений размещают другие работодатели, кто нанимает, какие зарплаты и требования указывает.\n\nПриложение собирает реальные вакансии HeadHunter и «Работы России», отделяет подходящие должности от смежных и показывает аналитику выбранного среза. Проект создан самостоятельно как демоверсия для сценария планирования найма.",
+    "intro": "MarketLens помогает компании оценить рынок выбранной профессии перед поиском сотрудника: сколько предложений размещают другие работодатели, кто нанимает, какие зарплаты и требования указывает.\n\nНейросеть превращает введённое название профессии в профиль поиска: предлагает варианты формулировок, признаки подходящей работы и исключения. По этому профилю приложение собирает реальные вакансии HeadHunter и «Работы России», а скрипты локально отбирают объявления и рассчитывают аналитику. Проект создан самостоятельно как демоверсия для планирования найма.",
     "status": "Самостоятельная демоверсия · Реальные данные · Локальное приложение",
     "heroCaption": "Геодезист, HeadHunter: сохранённый ограниченный срез от 10 октября 2026 года. При фильтре «Только вахта» — 30 подходящих объявлений от 26 компаний; зарплата указана в 28.",
     "taskTitle": "Понять, с какими предложениями конкурирует новая вакансия",
@@ -10,12 +10,12 @@ const copy={
     "solutionTitle": "Как работает MarketLens",
     "steps": [
       [
-        "Готовит поиск по профессии",
-        "Пользователь задаёт профессию, страну, регион, формат работы и источники. Gemini предлагает запросы, синонимы, роль и специализацию; профиль можно проверить и исправить перед сбором."
+        "Нейросеть готовит профиль",
+        "По введённой профессии Gemini предлагает формулировки, синонимы, признаки и исключения. Пользователь проверяет и при необходимости исправляет профиль."
       ],
       [
-        "Собирает и проверяет объявления",
-        "HeadHunter покрывает Россию и Казахстан, «Работа России» — Россию. Скрипт удаляет повторы внутри источника и разделяет подходящие, смежные, спорные и исключённые должности."
+        "Скрипты собирают и отбирают вакансии",
+        "Приложение ищет по подготовленным формулировкам в HH и «Работе России». Локальные правила применяют признаки и исключения, удаляют повторы внутри источника и разделяют результаты по соответствию."
       ],
       [
         "Показывает рынок выбранной выборки",
@@ -37,8 +37,8 @@ const copy={
     "engineeringTitle": "Ключевые решения при разработке",
     "engineering": [
       [
-        "ИИ только для подготовки поиска",
-        "Gemini получает название профессии и помогает составить профиль. Тексты вакансий не передаются модели: отбор, извлечение требований и расчёты выполняют скрипты. Сохранённый или вручную исправленный профиль позволяет работать без нового запроса к ИИ."
+        "Нейросеть помогает до сбора данных",
+        "Gemini составляет поисковые формулировки, роль, контекст и исключения из запроса пользователя. Так её языковые возможности используются для подготовки поиска, а обработка реальных объявлений остаётся локальной. Готовый профиль сохраняется и повторно используется без нового запроса к модели."
       ],
       [
         "Роль отдельно от специализации",
@@ -76,7 +76,7 @@ const copy={
       ],
       [
         "Gemini",
-        "Подготовка редактируемого поискового профиля профессии."
+        "Варианты формулировок, эквивалентные названия, признаки профессии и исключения для редактируемого профиля поиска."
       ],
       [
         "pymorphy3 · программные правила",
@@ -100,12 +100,15 @@ const copy={
     "engineeringLabel": "03 / ИНЖЕНЕРИЯ",
     "resultLabel": "04 / РЕЗУЛЬТАТ",
     "stackLabel": "05 / ТЕХНОЛОГИИ",
-    "back": "← Все работы"
+    "back": "← Все работы",
+    "aiTitle": "Нейросеть превращает название профессии в профиль поиска",
+    "ai": "Пользователь вводит профессию и нажимает «Подготовить поиск». Gemini разбирает название и предлагает разные формулировки, эквивалентные названия, основную роль, признаки нужной специализации и слова-исключения. Это помогает искать одну профессию под разными названиями и отделять её от похожих должностей.\n\nНапример, для «Пробоотборщика» помощник предлагает «отборщик проб», «лаборант-пробоотборщик» и «специалист по отбору проб». Отдельно задаёт признаки отбора и подготовки проб, а также другие роли и контексты для исключения. Все поля видны пользователю: профиль можно уточнить перед запуском.\n\nДальше работают скрипты: собирают объявления по подготовленным формулировкам, применяют профиль и исключения при отборе, извлекают требования и считают показатели. Нейросеть получает только поисковый запрос о профессии; тексты вакансий и собранные рыночные данные ей не передаются.",
+    "profileCaption": "Профиль поиска «Пробоотборщик», подготовленный Gemini: формулировки, эквивалентные названия, роль, специализация и исключения. Реальный экран приложения с сохранённым ИИ-профилем; все поля можно редактировать."
   },
   "en": {
     "kicker": "MARKETLENS / JOB MARKET ANALYTICS",
     "title": "Research the job market before hiring",
-    "intro": "MarketLens helps a company assess the market for a chosen profession before recruiting: how many offers other employers publish, who is hiring, and which salaries and requirements they state.\n\nThe application collects real HeadHunter and Jobs in Russia listings, separates matching roles from adjacent ones and analyses the selected sample. It was independently built as a demo for hiring planning.",
+    "intro": "MarketLens helps a company assess the market for a chosen profession before recruiting: how many offers other employers publish, who is hiring, and which salaries and requirements they state.\n\nAn AI model turns the entered profession into a search profile: alternative queries, relevant job indicators and exclusions. The application uses this profile to collect real HeadHunter and Jobs in Russia listings; local scripts screen them and calculate statistics. The project was independently built as a demo for hiring planning.",
     "status": "Independent demo · Real data · Local application",
     "heroCaption": "Surveyor, HeadHunter: a saved limited sample from 10 October 2026. With “Rotation only” selected: 30 matching listings from 26 companies; 28 disclose salary information.",
     "taskTitle": "Understand the offers a new vacancy will compete with",
@@ -113,12 +116,12 @@ const copy={
     "solutionTitle": "How MarketLens works",
     "steps": [
       [
-        "Prepare a profession search",
-        "Users specify a profession, country, region, work format and sources. Gemini suggests queries, synonyms, role and specialisation; the profile can be reviewed and edited before collection."
+        "AI prepares the profile",
+        "Given the profession, Gemini suggests queries, synonyms, indicators and exclusions. Users review and, if needed, edit the profile."
       ],
       [
-        "Collect and screen listings",
-        "HeadHunter covers Russia and Kazakhstan; Jobs in Russia covers Russia. Scripts remove duplicates within each source and separate matching, adjacent, uncertain and excluded roles."
+        "Scripts collect and screen listings",
+        "The application searches HH and Jobs in Russia using the prepared queries. Local rules apply indicators and exclusions, remove within-source duplicates and classify results by relevance."
       ],
       [
         "Analyse the selected sample",
@@ -140,8 +143,8 @@ const copy={
     "engineeringTitle": "Key development decisions",
     "engineering": [
       [
-        "AI prepares the search only",
-        "Gemini receives the profession name and helps build a profile. Listing texts are not sent to the model: scripts perform screening, requirement extraction and calculations. Saved or manually edited profiles avoid another AI request."
+        "AI helps before data collection",
+        "Gemini derives queries, role, context and exclusions from the user’s request. Its language capabilities help prepare searches, while real listing processing remains local. The profile is saved and reused without another model request."
       ],
       [
         "Separate role from specialisation",
@@ -179,7 +182,7 @@ const copy={
       ],
       [
         "Gemini",
-        "Preparation of an editable profession search profile."
+        "Alternative queries, equivalent titles, profession indicators and exclusions for an editable search profile."
       ],
       [
         "pymorphy3 · programmatic rules",
@@ -203,7 +206,10 @@ const copy={
     "engineeringLabel": "03 / ENGINEERING",
     "resultLabel": "04 / THE RESULT",
     "stackLabel": "05 / TECHNOLOGIES",
-    "back": "← All projects"
+    "back": "← All projects",
+    "aiTitle": "AI turns a profession name into a search profile",
+    "ai": "The user enters a profession and clicks “Prepare search”. Gemini interprets the name and suggests alternative queries, equivalent titles, the primary role, specialisation indicators and exclusion terms. This helps find the same profession under different titles and distinguish it from similar roles.\n\nFor “Sample collector”, for example, the assistant suggests titles equivalent to “sample taker”, “laboratory sample collector” and “sample collection specialist”. It separately lists sample collection and preparation indicators, along with other roles and contexts to exclude. All fields are visible and can be edited before collection.\n\nScripts handle the next stages: collect listings using the prepared queries, apply the profile and exclusions during screening, extract requirements and calculate metrics. The AI model receives only the profession search request; listing texts and collected market data are not sent to it.",
+    "profileCaption": "Gemini-generated “Sample collector” search profile: queries, equivalent titles, role, specialisation and exclusions. Actual application screen showing a saved AI profile; all fields are editable."
   }
 };
 let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'ru';
