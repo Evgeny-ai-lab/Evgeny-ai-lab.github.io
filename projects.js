@@ -68,6 +68,40 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
+    "id": "retail-intelligence",
+    "category": "monitor",
+    "type": {
+      "ru": "Аналитика розничных продаж",
+      "en": "Retail sales analytics"
+    },
+    "title": {
+      "ru": "Retail Intelligence — аналитика продаж и прогноз спроса",
+      "en": "Retail Intelligence — sales analytics and forecasting"
+    },
+    "summary": {
+      "ru": "Анализ продаж сети из 54 магазинов: динамика, сезонность и прогноз спроса с проверкой на исторических данных.",
+      "en": "Sales analysis across 54 stores: trends, seasonality and demand forecasting evaluated on historical data."
+    },
+    "image": "work/retail-intelligence/assets/overview.png",
+    "alt": {
+      "ru": "Обзор сети: объём продаж, динамика спроса и структура категорий. Данные Favorita за 2013–2017 годы.",
+      "en": "Network overview: sales volume, demand trends and category mix. Favorita data from 2013–2017; Russian interface."
+    },
+    "url": "work/retail-intelligence/",
+    "tags": {
+      "ru": [
+        "Аналитика данных",
+        "Прогнозирование",
+        "Интерактивные графики"
+      ],
+      "en": [
+        "Data analytics",
+        "Forecasting",
+        "Interactive charts"
+      ]
+    }
+  },
+  {
     "id": "qwen-kaggle",
     "category": "ai",
     "type": {
