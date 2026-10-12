@@ -113,7 +113,9 @@ body{background:#f6f5f0}
 .hero-button:hover svg{transform:translate(3px,-3px)}
 .hero-button:active{transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,16,10,.12)}
 .hero-button:focus-visible{outline:2px solid #d7fb79;outline-offset:4px}
-#work,#about,#contact{scroll-margin-top:96px}
+/* The homepage header scrolls away, so anchors need no fixed-header offset. */
+html{scroll-padding-top:0}
+#work,#about,#contact{scroll-margin-top:0}
 @media(max-width:760px){.header .brand-name{font-size:14px}.hero-button{padding:0 16px}.hero-links{gap:10px}}
 @media(max-width:400px){.header .brand-name{font-size:12px}.hero-button{font-size:14px;padding:0 15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-button,.hero-button svg,.header nav a,.header nav a::after{transition:none}.hero-button:hover,.hero-button:active,.hero-button:hover svg{transform:none}}
