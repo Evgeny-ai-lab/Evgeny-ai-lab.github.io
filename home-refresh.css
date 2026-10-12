@@ -124,3 +124,9 @@ html{scroll-padding-top:0}
 #work .section{padding-top:28px}
 .about-section>.section-heading{padding-top:24px}
 @media(max-width:760px){#work .section{padding-top:22px}.about-section>.section-heading{padding-top:18px}}
+
+/* Simplified homepage hero: existing panorama and desktop height preserved. */
+.header{justify-content:space-between}
+.hero-content{display:flex;flex-direction:column;justify-content:center}
+@media(min-width:651px){.work-hero h1{line-height:1.12;margin-bottom:20px}.work-hero .intro{max-width:540px}.hero-links{margin-top:24px}}
+@media(max-width:650px){.work-hero h1{min-height:2.04em;display:flex;align-items:center;margin-bottom:14px}}
