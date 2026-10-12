@@ -119,3 +119,8 @@ html{scroll-padding-top:0}
 @media(max-width:760px){.header .brand-name{font-size:14px}.hero-button{padding:0 16px}.hero-links{gap:10px}}
 @media(max-width:400px){.header .brand-name{font-size:12px}.hero-button{font-size:14px;padding:0 15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-button,.hero-button svg,.header nav a,.header nav a::after{transition:none}.hero-button:hover,.hero-button:active,.hero-button:hover svg{transform:none}}
+
+/* Bring section headings closer to their anchor positions. */
+#work .section{padding-top:28px}
+.about-section>.section-heading{padding-top:24px}
+@media(max-width:760px){#work .section{padding-top:22px}.about-section>.section-heading{padding-top:18px}}
