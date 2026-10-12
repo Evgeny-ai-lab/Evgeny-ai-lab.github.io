@@ -34,36 +34,36 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
-    "id": "medflow",
-    "category": "process",
+    "id": "marketlens",
+    "category": "monitor",
     "type": {
-      "ru": "Автоматизация документов",
-      "en": "Document automation"
+      "ru": "Аналитика рынка труда",
+      "en": "Labour-market analytics"
     },
     "title": {
-      "ru": "Автоматическое оформление направлений на медосмотр",
-      "en": "Medflow — medical referral preparation"
+      "ru": "Анализ зарплат и условий найма на рынке труда",
+      "en": "MarketLens — vacancy market research"
     },
     "summary": {
-      "ru": "Приложение автоматизирует подготовку направлений на медосмотр и психиатрическое освидетельствование. Извлекает данные из PDF-анкет или позволяет ввести их вручную, подбирает необходимые требования по должности из Excel-справочников и автоматически заполняет документы. Пользователь может проверить и исправить данные перед формированием. Готовые PDF и Excel сохраняются в личном архиве — без ручного переноса информации между файлами и заполнения шаблонов.",
-      "en": "An application that automatically prepares referrals for medical examinations and psychiatric assessments. It extracts information from PDF forms, selects role-specific requirements from Excel reference files and fills in documents. Completed referrals are generated in PDF and Excel and saved in a personal archive, reducing manual data entry."
+      "ru": "Приложение помогает компаниям оценивать конкурентоспособность условий найма на основе реальных предложений работодателей. Собирает вакансии с HeadHunter и Работы России, анализирует зарплаты, требования к квалификации, опыту и условия работы по выбранной профессии. ИИ помогает точнее находить подходящие объявления, а интерактивная аналитика показывает, какие компании ищут специалистов, сколько предлагают и какие требования предъявляют. Результаты позволяют сравнивать условия конкурентов, обоснованно определять зарплатные предложения и формировать требования к будущим сотрудникам.",
+      "en": "A tool for researching the labour market for a selected occupation. It collects real vacancies from HeadHunter and Jobs in Russia, analysing employer offers, salaries, requirements and working conditions. AI helps refine search queries, while interactive analytics supports market exploration and comparisons between companies."
     },
-    "image": "work/medflow/assets/workspace.png",
+    "image": "work/marketlens/assets/overview.png",
     "alt": {
-      "ru": "Форма подготовки направления. Все данные, названия и значения справочника вымышлены.",
-      "en": "Referral preparation form. All personal details, names and reference values are fictional; Russian interface."
+      "ru": "Работающий MarketLens: сохранённый анализ вакансий геодезиста",
+      "en": "Actual MarketLens analysis of saved surveyor listings; Russian interface"
     },
-    "url": "work/medflow/",
+    "url": "work/marketlens/",
     "tags": {
       "ru": [
-        "Документооборот",
-        "PDF и Excel",
-        "Скриптовая автоматизация"
+        "HH + Работа России",
+        "Зарплаты и компании",
+        "Поисковый помощник"
       ],
       "en": [
-        "Document workflow",
-        "PDF and Excel",
-        "Script automation"
+        "HH + Jobs in Russia",
+        "Pay & employers",
+        "Search assistant"
       ]
     }
   },
@@ -204,36 +204,36 @@ window.PORTFOLIO_PROJECTS=[
     }
   },
   {
-    "id": "marketlens",
-    "category": "monitor",
+    "id": "medflow",
+    "category": "process",
     "type": {
-      "ru": "Аналитика рынка труда",
-      "en": "Labour-market analytics"
+      "ru": "Автоматизация документов",
+      "en": "Document automation"
     },
     "title": {
-      "ru": "Анализ зарплат и условий найма на рынке труда",
-      "en": "MarketLens — vacancy market research"
+      "ru": "Автоматическое оформление направлений на медосмотр",
+      "en": "Medflow — medical referral preparation"
     },
     "summary": {
-      "ru": "Приложение помогает компаниям оценивать конкурентоспособность условий найма на основе реальных предложений работодателей. Собирает вакансии с HeadHunter и Работы России, анализирует зарплаты, требования к квалификации, опыту и условия работы по выбранной профессии. ИИ помогает точнее находить подходящие объявления, а интерактивная аналитика показывает, какие компании ищут специалистов, сколько предлагают и какие требования предъявляют. Результаты позволяют сравнивать условия конкурентов, обоснованно определять зарплатные предложения и формировать требования к будущим сотрудникам.",
-      "en": "A tool for researching the labour market for a selected occupation. It collects real vacancies from HeadHunter and Jobs in Russia, analysing employer offers, salaries, requirements and working conditions. AI helps refine search queries, while interactive analytics supports market exploration and comparisons between companies."
+      "ru": "Приложение автоматизирует подготовку направлений на медосмотр и психиатрическое освидетельствование. Извлекает данные из PDF-анкет или позволяет ввести их вручную, подбирает необходимые требования по должности из Excel-справочников и автоматически заполняет документы. Пользователь может проверить и исправить данные перед формированием. Готовые PDF и Excel сохраняются в личном архиве — без ручного переноса информации между файлами и заполнения шаблонов.",
+      "en": "An application that automatically prepares referrals for medical examinations and psychiatric assessments. It extracts information from PDF forms, selects role-specific requirements from Excel reference files and fills in documents. Completed referrals are generated in PDF and Excel and saved in a personal archive, reducing manual data entry."
     },
-    "image": "work/marketlens/assets/overview.png",
+    "image": "work/medflow/assets/workspace.png",
     "alt": {
-      "ru": "Работающий MarketLens: сохранённый анализ вакансий геодезиста",
-      "en": "Actual MarketLens analysis of saved surveyor listings; Russian interface"
+      "ru": "Форма подготовки направления. Все данные, названия и значения справочника вымышлены.",
+      "en": "Referral preparation form. All personal details, names and reference values are fictional; Russian interface."
     },
-    "url": "work/marketlens/",
+    "url": "work/medflow/",
     "tags": {
       "ru": [
-        "HH + Работа России",
-        "Зарплаты и компании",
-        "Поисковый помощник"
+        "Документооборот",
+        "PDF и Excel",
+        "Скриптовая автоматизация"
       ],
       "en": [
-        "HH + Jobs in Russia",
-        "Pay & employers",
-        "Search assistant"
+        "Document workflow",
+        "PDF and Excel",
+        "Script automation"
       ]
     }
   },
