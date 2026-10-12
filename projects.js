@@ -7,11 +7,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Voice AI assistant"
     },
     "title": {
-      "ru": "JARVIS — ассистент для macOS",
+      "ru": "Голосовой ИИ-ассистент для управления компьютером и AI-агентами",
       "en": "JARVIS — assistant for macOS"
     },
     "summary": {
-      "ru": "Персональный ИИ-ассистент, с которым можно управлять компьютером обычным разговором. JARVIS взаимодействует с приложениями, анализирует экран и выполняет голосовые команды. Для сложных задач подключает специализированных AI-агентов, а память и библиотека навыков позволяют сохранять знания и повторно использовать освоенные сценарии.",
+      "ru": "Персональный ИИ-ассистент для macOS, которому можно голосом поручать реальные задачи. Он открывает программы, работает в браузере, нажимает кнопки, вводит текст, видит происходящее на экране и через камеру. Для сложных задач подключает специализированных ИИ-агентов, которые ищут и анализируют информацию, работают с файлами и пишут код. Пока агенты выполняют задания, с JARVIS можно продолжать разговор. Ассистент также обладает памятью и умеет запоминать последовательности действий, чтобы повторять их по голосовой команде.",
       "en": "A personal AI assistant that lets you control your computer through ordinary conversation. JARVIS interacts with applications, analyses the screen and carries out voice commands. It delegates complex tasks to specialist AI agents, while memory and a skill library retain knowledge and make learned workflows reusable."
     },
     "image": "work/jarvis/assets/overview.png",
@@ -41,11 +41,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "AI auction lot analysis"
     },
     "title": {
-      "ru": "Auction Scout — отбор автомобилей и мотоциклов",
+      "ru": "ИИ-агент для отбора авто и мото на аукционах США",
       "en": "Auction Scout — car and motorcycle selection"
     },
     "summary": {
-      "ru": "AI-агент для автоматического поиска и отбора автомобилей и мотоциклов на аукционах США. Собирает объявления по заданным параметрам, анализирует видимые повреждения по фотографиям и определяет соответствие требованиям заказчика. Формирует подборку подходящих лотов с аргументированной оценкой, а замечания пользователя учитывает при последующих проверках.",
+      "ru": "ИИ-агент самостоятельно просматривает аукционные лоты, проверяет характеристики и анализирует фотографии с помощью нейросети, чтобы выявлять нежелательные повреждения. Подбирает автомобили и мотоциклы по требованиям заказчика, объясняет причины отбора и позволяет проверять отклонённые варианты. Умеет выполнять поиск по расписанию, а замечания пользователя запоминает и учитывает при следующих проверках.",
       "en": "An AI agent for finding and selecting cars and motorcycles at US auctions. It collects listings matching specified parameters, analyses visible damage in photographs and checks the customer’s requirements. It produces a shortlist with explained assessments and uses user feedback in subsequent checks."
     },
     "image": "work/auction-scout/assets/selection-retina.png",
@@ -75,11 +75,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Document automation"
     },
     "title": {
-      "ru": "Medflow — оформление медицинских направлений",
+      "ru": "Автоматическое оформление направлений на медосмотр",
       "en": "Medflow — medical referral preparation"
     },
     "summary": {
-      "ru": "Приложение для автоматической подготовки направлений на медосмотр и психиатрическое освидетельствование. Извлекает сведения из PDF-анкет, подбирает необходимые требования по должности из Excel-справочников и заполняет документы. Готовые направления формируются в PDF и Excel и сохраняются в личном архиве, сокращая объём ручного заполнения.",
+      "ru": "Приложение автоматизирует подготовку направлений на медосмотр и психиатрическое освидетельствование. Извлекает данные из PDF-анкет или позволяет ввести их вручную, подбирает необходимые требования по должности из Excel-справочников и автоматически заполняет документы. Пользователь может проверить и исправить данные перед формированием. Готовые PDF и Excel сохраняются в личном архиве — без ручного переноса информации между файлами и заполнения шаблонов.",
       "en": "An application that automatically prepares referrals for medical examinations and psychiatric assessments. It extracts information from PDF forms, selects role-specific requirements from Excel reference files and fills in documents. Completed referrals are generated in PDF and Excel and saved in a personal archive, reducing manual data entry."
     },
     "image": "work/medflow/assets/workspace.png",
@@ -109,11 +109,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Skills and curriculum analytics"
     },
     "title": {
-      "ru": "SkillScope — анализ IT-навыков и учебных программ",
+      "ru": "Анализ IT-вакансий и актуальности учебных программ",
       "en": "SkillScope — IT skills and curriculum analysis"
     },
     "summary": {
-      "ru": "Помогает образовательным компаниям развивать учебные программы на основе реальных потребностей рынка труда. Анализирует IT-вакансии, выявляет востребованные профессии и навыки, сопоставляет требования работодателей с содержанием курсов. Показывает недостающие темы и помогает обосновывать выбор новых направлений обучения.",
+      "ru": "Приложение анализирует реальные IT-вакансии, выявляет востребованные профессии и навыки, показывает, какие технологии и требования чаще встречаются у работодателей. Сопоставляет результаты с содержанием учебных курсов, находит недостающие темы и пробелы в практической подготовке. Позволяет изучать требования по направлениям и уровню специалистов, проверять выводы по исходным вакансиям и формировать отчёты с рекомендациями по развитию учебных программ.",
       "en": "Helps education providers develop curricula around real labour-market needs. It analyses IT vacancies, identifies in-demand roles and skills, and compares employer requirements with course content. It highlights missing topics and helps justify new training programmes."
     },
     "image": "work/skill-scope/assets/overview.png",
@@ -143,11 +143,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Labour-market analytics"
     },
     "title": {
-      "ru": "MarketLens — исследование рынка вакансий",
+      "ru": "Анализ зарплат и условий найма на рынке труда",
       "en": "MarketLens — vacancy market research"
     },
     "summary": {
-      "ru": "Инструмент для исследования рынка труда по выбранной профессии. Собирает реальные вакансии с HeadHunter и «Работы России», анализирует предложения работодателей, зарплаты, требования и условия работы. ИИ помогает точнее формировать поисковые запросы, а интерактивная аналитика позволяет изучать рынок и сравнивать предложения компаний.",
+      "ru": "Приложение помогает компаниям оценивать конкурентоспособность условий найма на основе реальных предложений работодателей. Собирает вакансии с HeadHunter и Работы России, анализирует зарплаты, требования к квалификации, опыту и условия работы по выбранной профессии. ИИ помогает точнее находить подходящие объявления, а интерактивная аналитика показывает, какие компании ищут специалистов, сколько предлагают и какие требования предъявляют. Результаты позволяют сравнивать условия конкурентов, обоснованно определять зарплатные предложения и формировать требования к будущим сотрудникам.",
       "en": "A tool for researching the labour market for a selected occupation. It collects real vacancies from HeadHunter and Jobs in Russia, analysing employer offers, salaries, requirements and working conditions. AI helps refine search queries, while interactive analytics supports market exploration and comparisons between companies."
     },
     "image": "work/marketlens/assets/overview.png",
@@ -177,11 +177,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Sales analytics and forecasting"
     },
     "title": {
-      "ru": "Retail Intelligence — аналитика продаж и прогноз спроса",
+      "ru": "Аналитика продаж и прогнозирование спроса",
       "en": "Retail Intelligence — sales analytics and demand forecasting"
     },
     "summary": {
-      "ru": "Аналитическое приложение на основе реальных исторических данных торговой сети из 54 магазинов. Позволяет исследовать динамику продаж, сравнивать магазины и товарные категории, выявлять сезонные закономерности и изменения спроса. Модель машинного обучения строит прогнозы, точность которых проверяется на исторических данных.",
+      "ru": "Приложение для анализа продаж торговой сети из 54 магазинов на реальных исторических данных. Позволяет сравнивать магазины и товарные категории, изучать динамику продаж, выявлять сезонные закономерности и влияние рекламных акций. Модель машинного обучения прогнозирует спрос, а её точность проверяется на фактических продажах. На тестовом периоде ошибка прогноза оказалась на 12,1% ниже, чем у простого сезонного метода. Результаты представлены в интерактивных графиках, а готовые прогнозы можно выгружать для дальнейшего использования.",
       "en": "An analytics application based on real historical data from a retail chain with 54 stores. It explores sales trends, compares stores and product categories, and reveals seasonal patterns and changes in demand. A machine-learning model generates forecasts whose accuracy is evaluated against historical data."
     },
     "image": "work/retail-intelligence/assets/overview.png",
@@ -211,11 +211,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Vehicle market monitoring"
     },
     "title": {
-      "ru": "MotorScope — мониторинг авто и мотоциклов",
+      "ru": "Мониторинг и аналитика рынка авто и мотоциклов",
       "en": "MotorScope — car and motorcycle market monitoring"
     },
     "summary": {
-      "ru": "Приложение для автоматического мониторинга рынка автомобилей и мотоциклов. Отслеживает интересующие модели на av.by, фиксирует новые и снятые объявления, изменения цен и сроки размещения. Сохраняет историю предложений и предоставляет интерактивную аналитику, помогая оценивать рыночную ситуацию и принимать более обоснованные решения о закупках.",
+      "ru": "Приложение автоматически отслеживает объявления об автомобилях и мотоциклах на av.by по выбранным моделям и характеристикам. Фиксирует новые и снятые объявления, изменения цен и сроки размещения, сохраняя историю даже после исчезновения предложений с площадки. Интерактивные графики позволяют сравнивать модели и рыночные сегменты по цене, году выпуска, пробегу и региону, анализировать динамику рынка и оценивать востребованность автомобилей для планирования закупок.",
       "en": "An application for automatically monitoring the car and motorcycle market. It tracks selected models on av.by, recording new and removed listings, price changes and listing durations. It retains offer history and provides interactive analytics to assess market conditions and support better-informed purchasing decisions."
     },
     "image": "work/motorscope/assets/overview.png",
@@ -245,11 +245,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Stock photography topic research"
     },
     "title": {
-      "ru": "Stock Insights — перспективные темы для изображений",
+      "ru": "Анализ трендов и поиск идей для фотостоков",
       "en": "Stock Insights — promising image topics"
     },
     "summary": {
-      "ru": "Приложение помогает определять, какие изображения стоит создавать для продажи на фотостоках. Автоматически исследует открытые источники, анализирует актуальные тренды и динамику интереса, предлагает конкретные сюжеты с объяснением их перспективности. Результаты превращаются в готовые задания, которые можно передать в генератор изображений.",
+      "ru": "Приложение исследует, какие изображения стоит создавать для продажи на фотостоках. Автоматически собирает и анализирует данные о поисковых трендах, новостях, сезонных событиях и стоковых площадках, выявляя перспективные направления. Предлагает конкретные сюжеты с рейтингом, обоснованием выбора и готовым визуальным контекстом. Позволяет изучать динамику интереса, планировать создание контента заранее и экспортировать подобранные темы в CSV для последующей генерации изображений.",
       "en": "Helps identify which images to create for sale on stock photography platforms. It automatically researches public sources, analyses current trends and changes in interest, and suggests specific concepts with explanations of their potential. Results become ready-to-use briefs for an image generator."
     },
     "image": "work/stock-insights/assets/topics.png",
@@ -279,11 +279,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "AI content automation"
     },
     "title": {
-      "ru": "All Stock — производство стоковых изображений",
+      "ru": "Автоматизация создания изображений для фотостоков",
       "en": "All Stock — stock image production"
     },
     "summary": {
-      "ru": "Приложение для автоматизации создания изображений с целью их продажи на фотостоках. Формирует промпты и метаданные, генерирует изображения через API в высоком разрешении и очищает готовые файлы от лишних технических данных. Все этапы объединены в единую последовательность, но каждый инструмент можно использовать и самостоятельно.",
+      "ru": "Приложение автоматизирует массовое создание изображений для продажи на фотостоках. На основе заданных тем с помощью ИИ формирует промпты, названия, описания и ключевые слова с учётом требований разных площадок. Генерирует изображения через API в высоком разрешении, очищает файлы от лишних метаданных и подготавливает CSV для загрузки на фотостоки. Все три инструмента работают как единая последовательность или по отдельности. Приложение прошло многократную проверку на практике и регулярно используется для массовой генерации и обработки больших партий изображений.",
       "en": "An application that automates image creation for sale on stock photography platforms. It produces prompts and metadata, generates high-resolution images through APIs and removes unnecessary technical metadata from finished files. The stages form a connected workflow, while each tool can also be used independently."
     },
     "image": "work/all-stock/assets/prompts.png",
@@ -313,11 +313,11 @@ window.PORTFOLIO_PROJECTS=[
       "en": "Cloud language model"
     },
     "title": {
-      "ru": "Qwen — собственный ИИ-сервер в облаке",
+      "ru": "Собственный ИИ-сервер на облачной видеокарте",
       "en": "Qwen — your own cloud AI server"
     },
     "summary": {
-      "ru": "Самостоятельно развёрнутая языковая модель в управляемой облачной среде. Вычисления выполняются на GPU Kaggle, а взаимодействовать с моделью можно с обычного компьютера через веб-чат или API. Решение позволяет управлять настройками и поведением ИИ, подключать его к другим приложениям и работать без зависимости от коммерческих LLM API.",
+      "ru": "Самостоятельно развёрнутая языковая модель Qwen, которая работает на облачных видеокартах Kaggle, а не на компьютере пользователя. С ней можно общаться через собственный веб-чат или подключать к другим приложениям через API. Система позволяет самостоятельно задавать инструкции, настраивать параметры генерации и управлять поведением модели без зависимости от коммерческих LLM API. Работоспособность подтверждена реальными облачными запусками, автоматическими тестами и проверками веб-чата и API.",
       "en": "An independently deployed language model in a controlled cloud environment. Computation runs on Kaggle GPUs, and the model is accessible from an ordinary computer through a web chat or API. The solution provides control over AI settings and behaviour, integration with other applications and independence from commercial LLM APIs."
     },
     "image": "work/qwen-kaggle/assets/chat-ru.png",
